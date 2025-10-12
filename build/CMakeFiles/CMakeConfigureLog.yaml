@@ -1,0 +1,467 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      The system is: Windows - 10.0.26100 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Users/tomam/Documents/w64devkit/bin/cc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+      
+      The C compiler identification could not be found in:
+        C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/3.31.0/CompilerIdC/a.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Users/tomam/Documents/w64devkit/bin/cc.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is GNU, found in:
+        C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/3.31.0/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Users/tomam/Documents/w64devkit/bin/c++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+      
+      The CXX compiler identification could not be found in:
+        C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/3.31.0/CompilerIdCXX/a.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Users/tomam/Documents/w64devkit/bin/c++.exe 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is GNU, found in:
+        C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/3.31.0/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-3rw977"
+      binary: "C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-3rw977"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-3rw977'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/Users/tomam/Documents/w64devkit/bin/mingw32-make.exe -f Makefile cmTC_65a2d/fast
+        make  -f CMakeFiles\\cmTC_65a2d.dir\\build.make CMakeFiles/cmTC_65a2d.dir/build
+        make[1]: Entering directory 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-3rw977'
+        Building C object CMakeFiles/cmTC_65a2d.dir/CMakeCCompilerABI.c.obj
+        C:\\Users\\tomam\\Documents\\w64devkit\\bin\\cc.exe   -v -o CMakeFiles\\cmTC_65a2d.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+        Using built-in specs.
+        COLLECT_GCC=cc
+        Target: x86_64-w64-mingw32
+        Configured with: /gcc-14.2.0/configure --prefix=/w64devkit --with-sysroot=/w64devkit/x86_64-w64-mingw32 --with-native-system-header-dir=/include --target=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --enable-static --disable-shared --with-pic --with-gmp-include=/deps/include --with-gmp-lib=/deps/lib --with-mpc-include=/deps/include --with-mpc-lib=/deps/lib --with-mpfr-include=/deps/include --with-mpfr-lib=/deps/lib --enable-languages=c,c++,fortran --enable-libgomp --enable-threads=posix --enable-version-specific-runtime-libs --disable-dependency-tracking --disable-lto --disable-multilib --disable-nls --disable-win32-registry --enable-mingw-wildcard CFLAGS_FOR_TARGET=-Os CXXFLAGS_FOR_TARGET=-Os LDFLAGS_FOR_TARGET=-s CFLAGS=-Os CXXFLAGS=-Os LDFLAGS=-s
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_65a2d.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_65a2d.dir\\'
+         C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/cc1.exe -quiet -v -iprefix C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/ -isysroot C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32 -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_65a2d.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o C:\\Users\\tomam\\AppData\\Local\\Temp\\cckru1TZ.s
+        GNU C17 (GCC) version 14.2.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "C:/Users/tomam/Documents/w64devkit/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.2.0/include"
+        ignoring nonexistent directory "C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../include"
+        ignoring duplicate directory "C:/Users/tomam/Documents/w64devkit/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.2.0/include-fixed"
+        ignoring duplicate directory "C:/Users/tomam/Documents/w64devkit/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/include"
+        ignoring nonexistent directory "C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32/mingw/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/include
+         C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/include-fixed
+         C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/include
+        End of search list.
+        Compiler executable checksum: b1c82c984a0ce5cd93aa5eb22e7ad9b3
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_65a2d.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_65a2d.dir\\'
+         as -v -o CMakeFiles\\cmTC_65a2d.dir\\CMakeCCompilerABI.c.obj C:\\Users\\tomam\\AppData\\Local\\Temp\\cckru1TZ.s
+        GNU assembler version 2.42 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.42
+        COMPILER_PATH=C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/;C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/
+        LIBRARY_PATH=C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_65a2d.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_65a2d.dir\\CMakeCCompilerABI.c.'
+        Linking C executable cmTC_65a2d.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_65a2d.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_65a2d.dir/objects.a
+        C:\\Users\\tomam\\Documents\\w64devkit\\bin\\ar.exe qc CMakeFiles\\cmTC_65a2d.dir/objects.a @CMakeFiles\\cmTC_65a2d.dir\\objects1.rsp
+        C:\\Users\\tomam\\Documents\\w64devkit\\bin\\cc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_65a2d.dir/objects.a -Wl,--no-whole-archive -o cmTC_65a2d.exe -Wl,--out-implib,libcmTC_65a2d.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        Using built-in specs.
+        COLLECT_GCC=cc
+        COLLECT_LTO_WRAPPER=C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe
+        Target: x86_64-w64-mingw32
+        Configured with: /gcc-14.2.0/configure --prefix=/w64devkit --with-sysroot=/w64devkit/x86_64-w64-mingw32 --with-native-system-header-dir=/include --target=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --enable-static --disable-shared --with-pic --with-gmp-include=/deps/include --with-gmp-lib=/deps/lib --with-mpc-include=/deps/include --with-mpc-lib=/deps/lib --with-mpfr-include=/deps/include --with-mpfr-lib=/deps/lib --enable-languages=c,c++,fortran --enable-libgomp --enable-threads=posix --enable-version-specific-runtime-libs --disable-dependency-tracking --disable-lto --disable-multilib --disable-nls --disable-win32-registry --enable-mingw-wildcard CFLAGS_FOR_TARGET=-Os CXXFLAGS_FOR_TARGET=-Os LDFLAGS_FOR_TARGET=-s CFLAGS=-Os CXXFLAGS=-Os LDFLAGS=-s
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.2.0 (GCC) 
+        COMPILER_PATH=C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/;C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/
+        LIBRARY_PATH=C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_65a2d.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_65a2d.'
+         C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe --sysroot=C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32 -m i386pep -Bdynamic -o cmTC_65a2d.exe C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_65a2d.dir/objects.a --no-whole-archive --out-implib libcmTC_65a2d.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o
+        collect2 version 14.2.0
+        C:\\Users\\tomam\\Documents\\w64devkit\\bin/ld.exe --sysroot=C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32 -m i386pep -Bdynamic -o cmTC_65a2d.exe C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_65a2d.dir/objects.a --no-whole-archive --out-implib libcmTC_65a2d.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o
+        GNU ld (GNU Binutils) 2.42
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_65a2d.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_65a2d.'
+        make[1]: Leaving directory 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-3rw977'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/include]
+          add: [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/include-fixed]
+          add: [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/include]
+        end of search list found
+        collapse include dir [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/include] ==> [C:/Users/tomam/Documents/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include]
+        collapse include dir [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/include-fixed] ==> [C:/Users/tomam/Documents/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include-fixed]
+        collapse include dir [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/include] ==> [C:/Users/tomam/Documents/w64devkit/x86_64-w64-mingw32/include]
+        implicit include dirs: [C:/Users/tomam/Documents/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include;C:/Users/tomam/Documents/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include-fixed;C:/Users/tomam/Documents/w64devkit/x86_64-w64-mingw32/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-3rw977']
+        ignore line: []
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/Users/tomam/Documents/w64devkit/bin/mingw32-make.exe -f Makefile cmTC_65a2d/fast]
+        ignore line: [make  -f CMakeFiles\\cmTC_65a2d.dir\\build.make CMakeFiles/cmTC_65a2d.dir/build]
+        ignore line: [make[1]: Entering directory 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-3rw977']
+        ignore line: [Building C object CMakeFiles/cmTC_65a2d.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [C:\\Users\\tomam\\Documents\\w64devkit\\bin\\cc.exe   -v -o CMakeFiles\\cmTC_65a2d.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=cc]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: /gcc-14.2.0/configure --prefix=/w64devkit --with-sysroot=/w64devkit/x86_64-w64-mingw32 --with-native-system-header-dir=/include --target=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --enable-static --disable-shared --with-pic --with-gmp-include=/deps/include --with-gmp-lib=/deps/lib --with-mpc-include=/deps/include --with-mpc-lib=/deps/lib --with-mpfr-include=/deps/include --with-mpfr-lib=/deps/lib --enable-languages=c c++ fortran --enable-libgomp --enable-threads=posix --enable-version-specific-runtime-libs --disable-dependency-tracking --disable-lto --disable-multilib --disable-nls --disable-win32-registry --enable-mingw-wildcard CFLAGS_FOR_TARGET=-Os CXXFLAGS_FOR_TARGET=-Os LDFLAGS_FOR_TARGET=-s CFLAGS=-Os CXXFLAGS=-Os LDFLAGS=-s]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_65a2d.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_65a2d.dir\\']
+        ignore line: [ C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/cc1.exe -quiet -v -iprefix C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/ -isysroot C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32 -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_65a2d.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o C:\\Users\\tomam\\AppData\\Local\\Temp\\cckru1TZ.s]
+        ignore line: [GNU C17 (GCC) version 14.2.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "C:/Users/tomam/Documents/w64devkit/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.2.0/include"]
+        ignore line: [ignoring nonexistent directory "C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../include"]
+        ignore line: [ignoring duplicate directory "C:/Users/tomam/Documents/w64devkit/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.2.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "C:/Users/tomam/Documents/w64devkit/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [ignoring nonexistent directory "C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32/mingw/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/include]
+        ignore line: [ C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/include-fixed]
+        ignore line: [ C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: b1c82c984a0ce5cd93aa5eb22e7ad9b3]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_65a2d.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_65a2d.dir\\']
+        ignore line: [ as -v -o CMakeFiles\\cmTC_65a2d.dir\\CMakeCCompilerABI.c.obj C:\\Users\\tomam\\AppData\\Local\\Temp\\cckru1TZ.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.42]
+        ignore line: [COMPILER_PATH=C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/]
+        ignore line: [C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/]
+        ignore line: [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/]
+        ignore line: [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/]
+        ignore line: [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_65a2d.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_65a2d.dir\\CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_65a2d.exe]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_65a2d.dir\\link.txt --verbose=1]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_65a2d.dir/objects.a]
+        ignore line: [C:\\Users\\tomam\\Documents\\w64devkit\\bin\\ar.exe qc CMakeFiles\\cmTC_65a2d.dir/objects.a @CMakeFiles\\cmTC_65a2d.dir\\objects1.rsp]
+        ignore line: [C:\\Users\\tomam\\Documents\\w64devkit\\bin\\cc.exe  -v -Wl -v -Wl --whole-archive CMakeFiles\\cmTC_65a2d.dir/objects.a -Wl --no-whole-archive -o cmTC_65a2d.exe -Wl --out-implib libcmTC_65a2d.dll.a -Wl --major-image-version 0 --minor-image-version 0]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=cc]
+        ignore line: [COLLECT_LTO_WRAPPER=C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: /gcc-14.2.0/configure --prefix=/w64devkit --with-sysroot=/w64devkit/x86_64-w64-mingw32 --with-native-system-header-dir=/include --target=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --enable-static --disable-shared --with-pic --with-gmp-include=/deps/include --with-gmp-lib=/deps/lib --with-mpc-include=/deps/include --with-mpc-lib=/deps/lib --with-mpfr-include=/deps/include --with-mpfr-lib=/deps/lib --enable-languages=c c++ fortran --enable-libgomp --enable-threads=posix --enable-version-specific-runtime-libs --disable-dependency-tracking --disable-lto --disable-multilib --disable-nls --disable-win32-registry --enable-mingw-wildcard CFLAGS_FOR_TARGET=-Os CXXFLAGS_FOR_TARGET=-Os LDFLAGS_FOR_TARGET=-s CFLAGS=-Os CXXFLAGS=-Os LDFLAGS=-s]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.2.0 (GCC) ]
+        ignore line: [COMPILER_PATH=C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/]
+        ignore line: [C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/]
+        ignore line: [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/]
+        ignore line: [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/]
+        ignore line: [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_65a2d.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_65a2d.']
+        link line: [ C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe --sysroot=C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32 -m i386pep -Bdynamic -o cmTC_65a2d.exe C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_65a2d.dir/objects.a --no-whole-archive --out-implib libcmTC_65a2d.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o]
+          arg [C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe] ==> ignore
+          arg [--sysroot=C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32] ==> ignore
+          arg [-m] ==> ignore
+          arg [i386pep] ==> ignore
+          arg [-Bdynamic] ==> search dynamic
+          arg [-o] ==> ignore
+          arg [cmTC_65a2d.exe] ==> ignore
+          arg [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
+          arg [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o] ==> obj [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o]
+          arg [-LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0] ==> dir [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0]
+          arg [-LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc] ==> dir [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc]
+          arg [-LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib]
+          arg [-LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib] ==> dir [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib]
+          arg [-LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib] ==> dir [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib]
+          arg [-LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../..] ==> dir [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../..]
+          arg [-v] ==> ignore
+          arg [--whole-archive] ==> ignore
+          arg [CMakeFiles\\cmTC_65a2d.dir/objects.a] ==> ignore
+          arg [--no-whole-archive] ==> ignore
+          arg [--out-implib] ==> ignore
+          arg [libcmTC_65a2d.dll.a] ==> ignore
+          arg [--major-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [--minor-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-ladvapi32] ==> lib [advapi32]
+          arg [-lshell32] ==> lib [shell32]
+          arg [-luser32] ==> lib [user32]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o] ==> obj [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o]
+        ignore line: [collect2 version 14.2.0]
+        ignore line: [C:\\Users\\tomam\\Documents\\w64devkit\\bin/ld.exe --sysroot=C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32 -m i386pep -Bdynamic -o cmTC_65a2d.exe C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_65a2d.dir/objects.a --no-whole-archive --out-implib libcmTC_65a2d.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o]
+        linker tool for 'C': C:/Users/tomam/Documents/w64devkit/bin/ld.exe
+        remove lib [msvcrt]
+        remove lib [msvcrt]
+        collapse obj [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> [C:/Users/tomam/Documents/w64devkit/x86_64-w64-mingw32/lib/crt2.o]
+        collapse obj [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o] ==> [C:/Users/tomam/Documents/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o]
+        collapse obj [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o] ==> [C:/Users/tomam/Documents/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o]
+        collapse library dir [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0] ==> [C:/Users/tomam/Documents/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0]
+        collapse library dir [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc] ==> [C:/Users/tomam/Documents/w64devkit/lib/gcc]
+        collapse library dir [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib] ==> [C:/Users/tomam/Documents/w64devkit/x86_64-w64-mingw32/lib]
+        collapse library dir [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib] ==> [C:/Users/tomam/Documents/w64devkit/lib]
+        collapse library dir [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib] ==> [C:/Users/tomam/Documents/w64devkit/x86_64-w64-mingw32/lib]
+        collapse library dir [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../..] ==> [C:/Users/tomam/Documents/w64devkit/lib]
+        implicit libs: [mingw32;gcc;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc;mingwex;kernel32]
+        implicit objs: [C:/Users/tomam/Documents/w64devkit/x86_64-w64-mingw32/lib/crt2.o;C:/Users/tomam/Documents/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o;C:/Users/tomam/Documents/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o]
+        implicit dirs: [C:/Users/tomam/Documents/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0;C:/Users/tomam/Documents/w64devkit/lib/gcc;C:/Users/tomam/Documents/w64devkit/x86_64-w64-mingw32/lib;C:/Users/tomam/Documents/w64devkit/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Users/tomam/Documents/w64devkit/bin/ld.exe" "-v"
+      GNU ld (GNU Binutils) 2.42
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-yw25l0"
+      binary: "C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-yw25l0"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-yw25l0'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/Users/tomam/Documents/w64devkit/bin/mingw32-make.exe -f Makefile cmTC_9b4a1/fast
+        make  -f CMakeFiles\\cmTC_9b4a1.dir\\build.make CMakeFiles/cmTC_9b4a1.dir/build
+        make[1]: Entering directory 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-yw25l0'
+        Building CXX object CMakeFiles/cmTC_9b4a1.dir/CMakeCXXCompilerABI.cpp.obj
+        C:\\Users\\tomam\\Documents\\w64devkit\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_9b4a1.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+        Using built-in specs.
+        COLLECT_GCC=c++
+        Target: x86_64-w64-mingw32
+        Configured with: /gcc-14.2.0/configure --prefix=/w64devkit --with-sysroot=/w64devkit/x86_64-w64-mingw32 --with-native-system-header-dir=/include --target=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --enable-static --disable-shared --with-pic --with-gmp-include=/deps/include --with-gmp-lib=/deps/lib --with-mpc-include=/deps/include --with-mpc-lib=/deps/lib --with-mpfr-include=/deps/include --with-mpfr-lib=/deps/lib --enable-languages=c,c++,fortran --enable-libgomp --enable-threads=posix --enable-version-specific-runtime-libs --disable-dependency-tracking --disable-lto --disable-multilib --disable-nls --disable-win32-registry --enable-mingw-wildcard CFLAGS_FOR_TARGET=-Os CXXFLAGS_FOR_TARGET=-Os LDFLAGS_FOR_TARGET=-s CFLAGS=-Os CXXFLAGS=-Os LDFLAGS=-s
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9b4a1.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_9b4a1.dir\\'
+         C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/cc1plus.exe -quiet -v -iprefix C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/ -isysroot C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32 -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_9b4a1.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o C:\\Users\\tomam\\AppData\\Local\\Temp\\cc0ry4cV.s
+        GNU C++17 (GCC) version 14.2.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "C:/Users/tomam/Documents/w64devkit/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++"
+        ignoring duplicate directory "C:/Users/tomam/Documents/w64devkit/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32"
+        ignoring duplicate directory "C:/Users/tomam/Documents/w64devkit/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/backward"
+        ignoring duplicate directory "C:/Users/tomam/Documents/w64devkit/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.2.0/include"
+        ignoring nonexistent directory "C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../include"
+        ignoring duplicate directory "C:/Users/tomam/Documents/w64devkit/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.2.0/include-fixed"
+        ignoring duplicate directory "C:/Users/tomam/Documents/w64devkit/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/include"
+        ignoring nonexistent directory "C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32/mingw/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++
+         C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32
+         C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/backward
+         C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/include
+         C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/include-fixed
+         C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/include
+        End of search list.
+        Compiler executable checksum: 720049954b8563a4f8c39b72b91551d9
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9b4a1.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_9b4a1.dir\\'
+         as -v -o CMakeFiles\\cmTC_9b4a1.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\tomam\\AppData\\Local\\Temp\\cc0ry4cV.s
+        GNU assembler version 2.42 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.42
+        COMPILER_PATH=C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/;C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/
+        LIBRARY_PATH=C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9b4a1.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_9b4a1.dir\\CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_9b4a1.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_9b4a1.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_9b4a1.dir/objects.a
+        C:\\Users\\tomam\\Documents\\w64devkit\\bin\\ar.exe qc CMakeFiles\\cmTC_9b4a1.dir/objects.a @CMakeFiles\\cmTC_9b4a1.dir\\objects1.rsp
+        C:\\Users\\tomam\\Documents\\w64devkit\\bin\\c++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_9b4a1.dir/objects.a -Wl,--no-whole-archive -o cmTC_9b4a1.exe -Wl,--out-implib,libcmTC_9b4a1.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        Using built-in specs.
+        COLLECT_GCC=c++
+        COLLECT_LTO_WRAPPER=C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe
+        Target: x86_64-w64-mingw32
+        Configured with: /gcc-14.2.0/configure --prefix=/w64devkit --with-sysroot=/w64devkit/x86_64-w64-mingw32 --with-native-system-header-dir=/include --target=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --enable-static --disable-shared --with-pic --with-gmp-include=/deps/include --with-gmp-lib=/deps/lib --with-mpc-include=/deps/include --with-mpc-lib=/deps/lib --with-mpfr-include=/deps/include --with-mpfr-lib=/deps/lib --enable-languages=c,c++,fortran --enable-libgomp --enable-threads=posix --enable-version-specific-runtime-libs --disable-dependency-tracking --disable-lto --disable-multilib --disable-nls --disable-win32-registry --enable-mingw-wildcard CFLAGS_FOR_TARGET=-Os CXXFLAGS_FOR_TARGET=-Os LDFLAGS_FOR_TARGET=-s CFLAGS=-Os CXXFLAGS=-Os LDFLAGS=-s
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.2.0 (GCC) 
+        COMPILER_PATH=C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/;C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/
+        LIBRARY_PATH=C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9b4a1.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_9b4a1.'
+         C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe --sysroot=C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32 -m i386pep -Bdynamic -o cmTC_9b4a1.exe C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_9b4a1.dir/objects.a --no-whole-archive --out-implib libcmTC_9b4a1.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o
+        collect2 version 14.2.0
+        C:\\Users\\tomam\\Documents\\w64devkit\\bin/ld.exe --sysroot=C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32 -m i386pep -Bdynamic -o cmTC_9b4a1.exe C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_9b4a1.dir/objects.a --no-whole-archive --out-implib libcmTC_9b4a1.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o
+        GNU ld (GNU Binutils) 2.42
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9b4a1.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_9b4a1.'
+        make[1]: Leaving directory 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-yw25l0'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:7 (project)"
+    checks:
+      - "Check for working CXX compiler: C:/Users/tomam/Documents/w64devkit/bin/c++.exe"
+    directories:
+      source: "C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-efkaaw"
+      binary: "C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-efkaaw"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-efkaaw'
+        
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/Users/tomam/Documents/w64devkit/bin/mingw32-make.exe -f Makefile cmTC_33b8e/fast
+        make  -f CMakeFiles\\cmTC_33b8e.dir\\build.make CMakeFiles/cmTC_33b8e.dir/build
+        make[1]: Entering directory 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-efkaaw'
+        Building CXX object CMakeFiles/cmTC_33b8e.dir/testCXXCompiler.cxx.obj
+        C:\\Users\\tomam\\Documents\\w64devkit\\bin\\c++.exe    -o CMakeFiles\\cmTC_33b8e.dir\\testCXXCompiler.cxx.obj -c C:\\Users\\tomam\\Documents\\quadsquad2026\\build\\CMakeFiles\\CMakeScratch\\TryCompile-efkaaw\\testCXXCompiler.cxx
+        Linking CXX executable cmTC_33b8e.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_33b8e.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_33b8e.dir/objects.a
+        C:\\Users\\tomam\\Documents\\w64devkit\\bin\\ar.exe qc CMakeFiles\\cmTC_33b8e.dir/objects.a @CMakeFiles\\cmTC_33b8e.dir\\objects1.rsp
+        C:\\Users\\tomam\\Documents\\w64devkit\\bin\\c++.exe -Wl,--whole-archive CMakeFiles\\cmTC_33b8e.dir/objects.a -Wl,--no-whole-archive -o cmTC_33b8e.exe -Wl,--out-implib,libcmTC_33b8e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_33b8e.dir\\linkLibs.rsp
+        make[1]: Leaving directory 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-efkaaw'
+        
+      exitCode: 0
+...

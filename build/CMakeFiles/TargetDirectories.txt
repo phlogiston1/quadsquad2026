@@ -1,0 +1,3 @@
+C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/qc_control.dir
+C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/edit_cache.dir
+C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/rebuild_cache.dir
