@@ -7,3 +7,6 @@ Lets make some cool stuff!
 +Z = downward motion
 
 yaw is ccw+
+
+# Other dependencies:
+- considering using Foxglove for visualization

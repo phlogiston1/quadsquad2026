@@ -1,3 +1,0 @@
-C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/simulator.dir
-C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/edit_cache.dir
-C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/rebuild_cache.dir

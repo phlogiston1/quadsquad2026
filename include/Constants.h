@@ -16,7 +16,7 @@
 //again the formula is DRAG_COEFF * rotor velocity^2
 
 //super simple drag formula F = -kv. Simple, but might require manual tuning.
-#define LINEAR_DRAG_COEFF_XY 10
-#define LINEAR_DRAG_COEFF_Z 10
-#define ANGULAR_DRAG_COEFF_XY 10
-#define ANGULAR_DRAG_COEFF_Z 10
+#define LINEAR_DRAG_COEFF_XY 0
+#define LINEAR_DRAG_COEFF_Z 0
+#define ANGULAR_DRAG_COEFF_XY 0
+#define ANGULAR_DRAG_COEFF_Z 0
