@@ -11,6 +11,7 @@
 
 #include "Kinematics.h"
 #include "Constants.h"
+#include "Util.h"
 #include <cmath>
 #include <array>
 #include <iostream>
@@ -32,13 +33,11 @@ QCAcceleration velocitiesToAccel (MotorVelocities velocities, Rotation3d measure
     double torque_x = ((thrust_rl - thrust_fr) - (thrust_rr - thrust_fl)) * rotor_pos;
     double torque_y = ((thrust_rl - thrust_fr) + (thrust_rr - thrust_fl)) * rotor_pos;
 
-    std::cout << thrust_rl << "\n";
-
     //calculate torque about the z axis due to drag from rotors:
-    double drag_torque_fl = (velocities.getFrontLeft() * velocities.getFrontLeft()) * DRAG_COEFF;
-    double drag_torque_rl = (velocities.getRearLeft() * velocities.getRearLeft()) * DRAG_COEFF;
-    double drag_torque_fr = (velocities.getFrontRight() * velocities.getFrontRight()) * DRAG_COEFF;
-    double drag_torque_rr = (velocities.getRearRight() * velocities.getRearRight()) * DRAG_COEFF;
+    double drag_torque_fl = (velocities.getFrontLeft() * velocities.getFrontLeft()) * ROTOR_DRAG_COEFF;
+    double drag_torque_rl = (velocities.getRearLeft() * velocities.getRearLeft()) * ROTOR_DRAG_COEFF;
+    double drag_torque_fr = (velocities.getFrontRight() * velocities.getFrontRight()) * ROTOR_DRAG_COEFF;
+    double drag_torque_rr = (velocities.getRearRight() * velocities.getRearRight()) * ROTOR_DRAG_COEFF;
 
     double drag_torque_a = drag_torque_fl + drag_torque_rr;
     double drag_torque_b = drag_torque_fr + drag_torque_rl;

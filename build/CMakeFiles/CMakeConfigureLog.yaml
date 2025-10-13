@@ -105,8 +105,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-3rw977"
-      binary: "C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-3rw977"
+      source: "C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-zx2pwd"
+      binary: "C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-zx2pwd"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -115,13 +115,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-3rw977'
+        Change Dir: 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-zx2pwd'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/Users/tomam/Documents/w64devkit/bin/mingw32-make.exe -f Makefile cmTC_65a2d/fast
-        make  -f CMakeFiles\\cmTC_65a2d.dir\\build.make CMakeFiles/cmTC_65a2d.dir/build
-        make[1]: Entering directory 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-3rw977'
-        Building C object CMakeFiles/cmTC_65a2d.dir/CMakeCCompilerABI.c.obj
-        C:\\Users\\tomam\\Documents\\w64devkit\\bin\\cc.exe   -v -o CMakeFiles\\cmTC_65a2d.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/Users/tomam/Documents/w64devkit/bin/mingw32-make.exe -f Makefile cmTC_5b264/fast
+        make  -f CMakeFiles\\cmTC_5b264.dir\\build.make CMakeFiles/cmTC_5b264.dir/build
+        make[1]: Entering directory 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-zx2pwd'
+        Building C object CMakeFiles/cmTC_5b264.dir/CMakeCCompilerABI.c.obj
+        C:\\Users\\tomam\\Documents\\w64devkit\\bin\\cc.exe   -v -o CMakeFiles\\cmTC_5b264.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
         Using built-in specs.
         COLLECT_GCC=cc
         Target: x86_64-w64-mingw32
@@ -129,8 +129,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib
         gcc version 14.2.0 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_65a2d.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_65a2d.dir\\'
-         C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/cc1.exe -quiet -v -iprefix C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/ -isysroot C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32 -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_65a2d.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o C:\\Users\\tomam\\AppData\\Local\\Temp\\cckru1TZ.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5b264.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_5b264.dir\\'
+         C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/cc1.exe -quiet -v -iprefix C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/ -isysroot C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32 -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_5b264.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o C:\\Users\\tomam\\AppData\\Local\\Temp\\ccVxkNAH.s
         GNU C17 (GCC) version 14.2.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
@@ -146,17 +146,17 @@ events:
          C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/include
         End of search list.
         Compiler executable checksum: b1c82c984a0ce5cd93aa5eb22e7ad9b3
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_65a2d.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_65a2d.dir\\'
-         as -v -o CMakeFiles\\cmTC_65a2d.dir\\CMakeCCompilerABI.c.obj C:\\Users\\tomam\\AppData\\Local\\Temp\\cckru1TZ.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5b264.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_5b264.dir\\'
+         as -v -o CMakeFiles\\cmTC_5b264.dir\\CMakeCCompilerABI.c.obj C:\\Users\\tomam\\AppData\\Local\\Temp\\ccVxkNAH.s
         GNU assembler version 2.42 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.42
         COMPILER_PATH=C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/;C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/
         LIBRARY_PATH=C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_65a2d.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_65a2d.dir\\CMakeCCompilerABI.c.'
-        Linking C executable cmTC_65a2d.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_65a2d.dir\\link.txt --verbose=1
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_65a2d.dir/objects.a
-        C:\\Users\\tomam\\Documents\\w64devkit\\bin\\ar.exe qc CMakeFiles\\cmTC_65a2d.dir/objects.a @CMakeFiles\\cmTC_65a2d.dir\\objects1.rsp
-        C:\\Users\\tomam\\Documents\\w64devkit\\bin\\cc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_65a2d.dir/objects.a -Wl,--no-whole-archive -o cmTC_65a2d.exe -Wl,--out-implib,libcmTC_65a2d.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5b264.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_5b264.dir\\CMakeCCompilerABI.c.'
+        Linking C executable cmTC_5b264.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_5b264.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_5b264.dir/objects.a
+        C:\\Users\\tomam\\Documents\\w64devkit\\bin\\ar.exe qc CMakeFiles\\cmTC_5b264.dir/objects.a @CMakeFiles\\cmTC_5b264.dir\\objects1.rsp
+        C:\\Users\\tomam\\Documents\\w64devkit\\bin\\cc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_5b264.dir/objects.a -Wl,--no-whole-archive -o cmTC_5b264.exe -Wl,--out-implib,libcmTC_5b264.dll.a -Wl,--major-image-version,0,--minor-image-version,0
         Using built-in specs.
         COLLECT_GCC=cc
         COLLECT_LTO_WRAPPER=C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe
@@ -167,13 +167,13 @@ events:
         gcc version 14.2.0 (GCC) 
         COMPILER_PATH=C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/;C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/
         LIBRARY_PATH=C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_65a2d.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_65a2d.'
-         C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe --sysroot=C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32 -m i386pep -Bdynamic -o cmTC_65a2d.exe C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_65a2d.dir/objects.a --no-whole-archive --out-implib libcmTC_65a2d.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5b264.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_5b264.'
+         C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe --sysroot=C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32 -m i386pep -Bdynamic -o cmTC_5b264.exe C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_5b264.dir/objects.a --no-whole-archive --out-implib libcmTC_5b264.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o
         collect2 version 14.2.0
-        C:\\Users\\tomam\\Documents\\w64devkit\\bin/ld.exe --sysroot=C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32 -m i386pep -Bdynamic -o cmTC_65a2d.exe C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_65a2d.dir/objects.a --no-whole-archive --out-implib libcmTC_65a2d.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o
+        C:\\Users\\tomam\\Documents\\w64devkit\\bin/ld.exe --sysroot=C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32 -m i386pep -Bdynamic -o cmTC_5b264.exe C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_5b264.dir/objects.a --no-whole-archive --out-implib libcmTC_5b264.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o
         GNU ld (GNU Binutils) 2.42
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_65a2d.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_65a2d.'
-        make[1]: Leaving directory 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-3rw977'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5b264.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_5b264.'
+        make[1]: Leaving directory 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-zx2pwd'
         
       exitCode: 0
   -
@@ -206,13 +206,13 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-3rw977']
+        ignore line: [Change Dir: 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-zx2pwd']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/Users/tomam/Documents/w64devkit/bin/mingw32-make.exe -f Makefile cmTC_65a2d/fast]
-        ignore line: [make  -f CMakeFiles\\cmTC_65a2d.dir\\build.make CMakeFiles/cmTC_65a2d.dir/build]
-        ignore line: [make[1]: Entering directory 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-3rw977']
-        ignore line: [Building C object CMakeFiles/cmTC_65a2d.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [C:\\Users\\tomam\\Documents\\w64devkit\\bin\\cc.exe   -v -o CMakeFiles\\cmTC_65a2d.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"]
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/Users/tomam/Documents/w64devkit/bin/mingw32-make.exe -f Makefile cmTC_5b264/fast]
+        ignore line: [make  -f CMakeFiles\\cmTC_5b264.dir\\build.make CMakeFiles/cmTC_5b264.dir/build]
+        ignore line: [make[1]: Entering directory 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-zx2pwd']
+        ignore line: [Building C object CMakeFiles/cmTC_5b264.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [C:\\Users\\tomam\\Documents\\w64devkit\\bin\\cc.exe   -v -o CMakeFiles\\cmTC_5b264.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=cc]
         ignore line: [Target: x86_64-w64-mingw32]
@@ -220,8 +220,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 14.2.0 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_65a2d.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_65a2d.dir\\']
-        ignore line: [ C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/cc1.exe -quiet -v -iprefix C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/ -isysroot C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32 -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_65a2d.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o C:\\Users\\tomam\\AppData\\Local\\Temp\\cckru1TZ.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5b264.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_5b264.dir\\']
+        ignore line: [ C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/cc1.exe -quiet -v -iprefix C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/ -isysroot C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32 -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_5b264.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o C:\\Users\\tomam\\AppData\\Local\\Temp\\ccVxkNAH.s]
         ignore line: [GNU C17 (GCC) version 14.2.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
@@ -237,8 +237,8 @@ events:
         ignore line: [ C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: b1c82c984a0ce5cd93aa5eb22e7ad9b3]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_65a2d.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_65a2d.dir\\']
-        ignore line: [ as -v -o CMakeFiles\\cmTC_65a2d.dir\\CMakeCCompilerABI.c.obj C:\\Users\\tomam\\AppData\\Local\\Temp\\cckru1TZ.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5b264.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_5b264.dir\\']
+        ignore line: [ as -v -o CMakeFiles\\cmTC_5b264.dir\\CMakeCCompilerABI.c.obj C:\\Users\\tomam\\AppData\\Local\\Temp\\ccVxkNAH.s]
         ignore line: [GNU assembler version 2.42 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.42]
         ignore line: [COMPILER_PATH=C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/]
         ignore line: [C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/]
@@ -248,12 +248,12 @@ events:
         ignore line: [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/]
         ignore line: [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_65a2d.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_65a2d.dir\\CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_65a2d.exe]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_65a2d.dir\\link.txt --verbose=1]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_65a2d.dir/objects.a]
-        ignore line: [C:\\Users\\tomam\\Documents\\w64devkit\\bin\\ar.exe qc CMakeFiles\\cmTC_65a2d.dir/objects.a @CMakeFiles\\cmTC_65a2d.dir\\objects1.rsp]
-        ignore line: [C:\\Users\\tomam\\Documents\\w64devkit\\bin\\cc.exe  -v -Wl -v -Wl --whole-archive CMakeFiles\\cmTC_65a2d.dir/objects.a -Wl --no-whole-archive -o cmTC_65a2d.exe -Wl --out-implib libcmTC_65a2d.dll.a -Wl --major-image-version 0 --minor-image-version 0]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5b264.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_5b264.dir\\CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_5b264.exe]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_5b264.dir\\link.txt --verbose=1]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_5b264.dir/objects.a]
+        ignore line: [C:\\Users\\tomam\\Documents\\w64devkit\\bin\\ar.exe qc CMakeFiles\\cmTC_5b264.dir/objects.a @CMakeFiles\\cmTC_5b264.dir\\objects1.rsp]
+        ignore line: [C:\\Users\\tomam\\Documents\\w64devkit\\bin\\cc.exe  -v -Wl -v -Wl --whole-archive CMakeFiles\\cmTC_5b264.dir/objects.a -Wl --no-whole-archive -o cmTC_5b264.exe -Wl --out-implib libcmTC_5b264.dll.a -Wl --major-image-version 0 --minor-image-version 0]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=cc]
         ignore line: [COLLECT_LTO_WRAPPER=C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe]
@@ -270,15 +270,15 @@ events:
         ignore line: [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/]
         ignore line: [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_65a2d.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_65a2d.']
-        link line: [ C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe --sysroot=C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32 -m i386pep -Bdynamic -o cmTC_65a2d.exe C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_65a2d.dir/objects.a --no-whole-archive --out-implib libcmTC_65a2d.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5b264.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_5b264.']
+        link line: [ C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe --sysroot=C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32 -m i386pep -Bdynamic -o cmTC_5b264.exe C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_5b264.dir/objects.a --no-whole-archive --out-implib libcmTC_5b264.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o]
           arg [C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe] ==> ignore
           arg [--sysroot=C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32] ==> ignore
           arg [-m] ==> ignore
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_65a2d.exe] ==> ignore
+          arg [cmTC_5b264.exe] ==> ignore
           arg [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
           arg [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o] ==> obj [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o]
           arg [-LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0] ==> dir [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0]
@@ -289,10 +289,10 @@ events:
           arg [-LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../..] ==> dir [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../..]
           arg [-v] ==> ignore
           arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_65a2d.dir/objects.a] ==> ignore
+          arg [CMakeFiles\\cmTC_5b264.dir/objects.a] ==> ignore
           arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_65a2d.dll.a] ==> ignore
+          arg [libcmTC_5b264.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -314,7 +314,7 @@ events:
           arg [-lkernel32] ==> lib [kernel32]
           arg [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o] ==> obj [C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o]
         ignore line: [collect2 version 14.2.0]
-        ignore line: [C:\\Users\\tomam\\Documents\\w64devkit\\bin/ld.exe --sysroot=C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32 -m i386pep -Bdynamic -o cmTC_65a2d.exe C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_65a2d.dir/objects.a --no-whole-archive --out-implib libcmTC_65a2d.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o]
+        ignore line: [C:\\Users\\tomam\\Documents\\w64devkit\\bin/ld.exe --sysroot=C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32 -m i386pep -Bdynamic -o cmTC_5b264.exe C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_5b264.dir/objects.a --no-whole-archive --out-implib libcmTC_5b264.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o]
         linker tool for 'C': C:/Users/tomam/Documents/w64devkit/bin/ld.exe
         remove lib [msvcrt]
         remove lib [msvcrt]
@@ -352,8 +352,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-yw25l0"
-      binary: "C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-yw25l0"
+      source: "C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-x7zhdq"
+      binary: "C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-x7zhdq"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -363,13 +363,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-yw25l0'
+        Change Dir: 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-x7zhdq'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/Users/tomam/Documents/w64devkit/bin/mingw32-make.exe -f Makefile cmTC_9b4a1/fast
-        make  -f CMakeFiles\\cmTC_9b4a1.dir\\build.make CMakeFiles/cmTC_9b4a1.dir/build
-        make[1]: Entering directory 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-yw25l0'
-        Building CXX object CMakeFiles/cmTC_9b4a1.dir/CMakeCXXCompilerABI.cpp.obj
-        C:\\Users\\tomam\\Documents\\w64devkit\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_9b4a1.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/Users/tomam/Documents/w64devkit/bin/mingw32-make.exe -f Makefile cmTC_7e8f5/fast
+        make  -f CMakeFiles\\cmTC_7e8f5.dir\\build.make CMakeFiles/cmTC_7e8f5.dir/build
+        make[1]: Entering directory 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-x7zhdq'
+        Building CXX object CMakeFiles/cmTC_7e8f5.dir/CMakeCXXCompilerABI.cpp.obj
+        C:\\Users\\tomam\\Documents\\w64devkit\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_7e8f5.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
         Using built-in specs.
         COLLECT_GCC=c++
         Target: x86_64-w64-mingw32
@@ -377,8 +377,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib
         gcc version 14.2.0 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9b4a1.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_9b4a1.dir\\'
-         C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/cc1plus.exe -quiet -v -iprefix C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/ -isysroot C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32 -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_9b4a1.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o C:\\Users\\tomam\\AppData\\Local\\Temp\\cc0ry4cV.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_7e8f5.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_7e8f5.dir\\'
+         C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/cc1plus.exe -quiet -v -iprefix C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/ -isysroot C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32 -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_7e8f5.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o C:\\Users\\tomam\\AppData\\Local\\Temp\\cc3WLZnS.s
         GNU C++17 (GCC) version 14.2.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
@@ -400,17 +400,17 @@ events:
          C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/include
         End of search list.
         Compiler executable checksum: 720049954b8563a4f8c39b72b91551d9
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9b4a1.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_9b4a1.dir\\'
-         as -v -o CMakeFiles\\cmTC_9b4a1.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\tomam\\AppData\\Local\\Temp\\cc0ry4cV.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_7e8f5.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_7e8f5.dir\\'
+         as -v -o CMakeFiles\\cmTC_7e8f5.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\tomam\\AppData\\Local\\Temp\\cc3WLZnS.s
         GNU assembler version 2.42 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.42
         COMPILER_PATH=C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/;C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/
         LIBRARY_PATH=C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_9b4a1.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_9b4a1.dir\\CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_9b4a1.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_9b4a1.dir\\link.txt --verbose=1
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_9b4a1.dir/objects.a
-        C:\\Users\\tomam\\Documents\\w64devkit\\bin\\ar.exe qc CMakeFiles\\cmTC_9b4a1.dir/objects.a @CMakeFiles\\cmTC_9b4a1.dir\\objects1.rsp
-        C:\\Users\\tomam\\Documents\\w64devkit\\bin\\c++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_9b4a1.dir/objects.a -Wl,--no-whole-archive -o cmTC_9b4a1.exe -Wl,--out-implib,libcmTC_9b4a1.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_7e8f5.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_7e8f5.dir\\CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_7e8f5.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_7e8f5.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_7e8f5.dir/objects.a
+        C:\\Users\\tomam\\Documents\\w64devkit\\bin\\ar.exe qc CMakeFiles\\cmTC_7e8f5.dir/objects.a @CMakeFiles\\cmTC_7e8f5.dir\\objects1.rsp
+        C:\\Users\\tomam\\Documents\\w64devkit\\bin\\c++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_7e8f5.dir/objects.a -Wl,--no-whole-archive -o cmTC_7e8f5.exe -Wl,--out-implib,libcmTC_7e8f5.dll.a -Wl,--major-image-version,0,--minor-image-version,0
         Using built-in specs.
         COLLECT_GCC=c++
         COLLECT_LTO_WRAPPER=C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe
@@ -421,13 +421,13 @@ events:
         gcc version 14.2.0 (GCC) 
         COMPILER_PATH=C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/;C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/
         LIBRARY_PATH=C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/;C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9b4a1.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_9b4a1.'
-         C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe --sysroot=C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32 -m i386pep -Bdynamic -o cmTC_9b4a1.exe C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_9b4a1.dir/objects.a --no-whole-archive --out-implib libcmTC_9b4a1.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7e8f5.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7e8f5.'
+         C:/Users/tomam/Documents/w64devkit/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe --sysroot=C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32 -m i386pep -Bdynamic -o cmTC_7e8f5.exe C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_7e8f5.dir/objects.a --no-whole-archive --out-implib libcmTC_7e8f5.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o
         collect2 version 14.2.0
-        C:\\Users\\tomam\\Documents\\w64devkit\\bin/ld.exe --sysroot=C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32 -m i386pep -Bdynamic -o cmTC_9b4a1.exe C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_9b4a1.dir/objects.a --no-whole-archive --out-implib libcmTC_9b4a1.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o
+        C:\\Users\\tomam\\Documents\\w64devkit\\bin/ld.exe --sysroot=C:/Users/tomam/Documents/w64devkit/bin/../x86_64-w64-mingw32 -m i386pep -Bdynamic -o cmTC_7e8f5.exe C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_7e8f5.dir/objects.a --no-whole-archive --out-implib libcmTC_7e8f5.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmingwex -lmsvcrt -lkernel32 C:/Users/tomam/Documents/w64devkit/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o
         GNU ld (GNU Binutils) 2.42
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9b4a1.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_9b4a1.'
-        make[1]: Leaving directory 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-yw25l0'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7e8f5.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7e8f5.'
+        make[1]: Leaving directory 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-x7zhdq'
         
       exitCode: 0
   -
@@ -438,8 +438,8 @@ events:
     checks:
       - "Check for working CXX compiler: C:/Users/tomam/Documents/w64devkit/bin/c++.exe"
     directories:
-      source: "C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-efkaaw"
-      binary: "C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-efkaaw"
+      source: "C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-vdmx3c"
+      binary: "C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-vdmx3c"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -449,19 +449,19 @@ events:
       variable: "CMAKE_CXX_COMPILER_WORKS"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-efkaaw'
+        Change Dir: 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-vdmx3c'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/Users/tomam/Documents/w64devkit/bin/mingw32-make.exe -f Makefile cmTC_33b8e/fast
-        make  -f CMakeFiles\\cmTC_33b8e.dir\\build.make CMakeFiles/cmTC_33b8e.dir/build
-        make[1]: Entering directory 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-efkaaw'
-        Building CXX object CMakeFiles/cmTC_33b8e.dir/testCXXCompiler.cxx.obj
-        C:\\Users\\tomam\\Documents\\w64devkit\\bin\\c++.exe    -o CMakeFiles\\cmTC_33b8e.dir\\testCXXCompiler.cxx.obj -c C:\\Users\\tomam\\Documents\\quadsquad2026\\build\\CMakeFiles\\CMakeScratch\\TryCompile-efkaaw\\testCXXCompiler.cxx
-        Linking CXX executable cmTC_33b8e.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_33b8e.dir\\link.txt --verbose=1
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_33b8e.dir/objects.a
-        C:\\Users\\tomam\\Documents\\w64devkit\\bin\\ar.exe qc CMakeFiles\\cmTC_33b8e.dir/objects.a @CMakeFiles\\cmTC_33b8e.dir\\objects1.rsp
-        C:\\Users\\tomam\\Documents\\w64devkit\\bin\\c++.exe -Wl,--whole-archive CMakeFiles\\cmTC_33b8e.dir/objects.a -Wl,--no-whole-archive -o cmTC_33b8e.exe -Wl,--out-implib,libcmTC_33b8e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_33b8e.dir\\linkLibs.rsp
-        make[1]: Leaving directory 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-efkaaw'
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/Users/tomam/Documents/w64devkit/bin/mingw32-make.exe -f Makefile cmTC_fdc3f/fast
+        make  -f CMakeFiles\\cmTC_fdc3f.dir\\build.make CMakeFiles/cmTC_fdc3f.dir/build
+        make[1]: Entering directory 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-vdmx3c'
+        Building CXX object CMakeFiles/cmTC_fdc3f.dir/testCXXCompiler.cxx.obj
+        C:\\Users\\tomam\\Documents\\w64devkit\\bin\\c++.exe    -o CMakeFiles\\cmTC_fdc3f.dir\\testCXXCompiler.cxx.obj -c C:\\Users\\tomam\\Documents\\quadsquad2026\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vdmx3c\\testCXXCompiler.cxx
+        Linking CXX executable cmTC_fdc3f.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_fdc3f.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_fdc3f.dir/objects.a
+        C:\\Users\\tomam\\Documents\\w64devkit\\bin\\ar.exe qc CMakeFiles\\cmTC_fdc3f.dir/objects.a @CMakeFiles\\cmTC_fdc3f.dir\\objects1.rsp
+        C:\\Users\\tomam\\Documents\\w64devkit\\bin\\c++.exe -Wl,--whole-archive CMakeFiles\\cmTC_fdc3f.dir/objects.a -Wl,--no-whole-archive -o cmTC_fdc3f.exe -Wl,--out-implib,libcmTC_fdc3f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_fdc3f.dir\\linkLibs.rsp
+        make[1]: Leaving directory 'C:/Users/tomam/Documents/quadsquad2026/build/CMakeFiles/CMakeScratch/TryCompile-vdmx3c'
         
       exitCode: 0
 ...

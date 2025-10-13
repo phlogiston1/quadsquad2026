@@ -1,5 +1,5 @@
-CMakeFiles/qc_control.dir/src/main.cpp.obj: \
- C:\Users\tomam\Documents\quadsquad2026\src\main.cpp \
+CMakeFiles/simulator.dir/src/simulator.cpp.obj: \
+ C:\Users\tomam\Documents\quadsquad2026\src\simulator.cpp \
  C:/Users/tomam/Documents/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/iostream \
  C:/Users/tomam/Documents/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/requires_hosted.h \
  C:/Users/tomam/Documents/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -143,4 +143,11 @@ CMakeFiles/qc_control.dir/src/main.cpp.obj: \
  C:/Users/tomam/Documents/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/basic_ios.tcc \
  C:/Users/tomam/Documents/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/ostream.tcc \
  C:/Users/tomam/Documents/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/istream \
- C:/Users/tomam/Documents/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/istream.tcc
+ C:/Users/tomam/Documents/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/istream.tcc \
+ C:/Users/tomam/Documents/quadsquad2026/include/Quadcopter.h \
+ C:/Users/tomam/Documents/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/array \
+ C:/Users/tomam/Documents/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/compare \
+ C:/Users/tomam/Documents/quadsquad2026/include/Util.h \
+ C:/Users/tomam/Documents/quadsquad2026/include/Util.h \
+ C:/Users/tomam/Documents/quadsquad2026/include/Kinematics.h \
+ C:/Users/tomam/Documents/quadsquad2026/include/Quadcopter.h

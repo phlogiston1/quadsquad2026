@@ -1,4 +1,5 @@
 #include <array>
+#include "Util.h"
 
 #ifndef QUADCOPTER_H
 #define QUADCOPTER_H
@@ -19,21 +20,7 @@ class MotorVelocities {
         double getRearRight() const;
 };
 
-class Rotation3d {
-    private:
-        double yaw;
-        double pitch;
-        double roll;
 
-    public:
-        Rotation3d(double yaw, double pitch, double roll);
-
-        double getYaw();
-        double getPitch();
-        double getRoll();
-        std::array<double, 3> thrustDirection() const;
-        std::array<double, 3> thrustVector(double thrustMagnitude) const;
-};
 
 class QCAcceleration {
     private:
@@ -53,14 +40,18 @@ class QCAcceleration {
 
 class QCState {
     private:
-        MotorVelocities velocities;
-        QCAcceleration acceleration;
+        Pose3d pose;
+        Pose3d velocity;
+        MotorVelocities motorVelocities;
+        double time;
 
     public:
-        QCState(MotorVelocities velocities, QCAcceleration acceleration);
-
-        MotorVelocities getVelocities();
-        QCAcceleration getAcceleration();
+        QCState(Pose3d pose, Pose3d velocity, MotorVelocities motorVelocities, double time);
+        Pose3d getPose();
+        Pose3d getVelocity();
+        MotorVelocities getMotorVelocities();
+        double getTime();
+        QCState predict(double timestep);
 };
 
 #endif

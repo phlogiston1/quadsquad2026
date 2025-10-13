@@ -10,11 +10,11 @@ project (quadsquad2025)
 file(GLOB CONTROL_SOURCES "src/*.cpp")
 
 # Add an executable with the above sources
-add_executable(qc_control ${CONTROL_SOURCES})
+add_executable(simulator ${CONTROL_SOURCES})
 
 # Set the directories that should be included in the build command for this target
 # when running g++ these will be included as -I/directory/path/
-target_include_directories(qc_control
+target_include_directories(simulator
     PRIVATE
         ${PROJECT_SOURCE_DIR}/include
 )

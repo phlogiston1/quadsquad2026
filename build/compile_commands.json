@@ -1,0 +1,38 @@
+[
+{
+  "directory": "C:/Users/tomam/Documents/quadsquad2026/build",
+  "command": "C:\\Users\\tomam\\Documents\\w64devkit\\bin\\c++.exe  @CMakeFiles/simulator.dir/includes_CXX.rsp -g -o CMakeFiles\\simulator.dir\\src\\InverseKinematics.cpp.obj -c C:\\Users\\tomam\\Documents\\quadsquad2026\\src\\InverseKinematics.cpp",
+  "file": "C:/Users/tomam/Documents/quadsquad2026/src/InverseKinematics.cpp",
+  "output": "CMakeFiles/simulator.dir/src/InverseKinematics.cpp.obj"
+},
+{
+  "directory": "C:/Users/tomam/Documents/quadsquad2026/build",
+  "command": "C:\\Users\\tomam\\Documents\\w64devkit\\bin\\c++.exe  @CMakeFiles/simulator.dir/includes_CXX.rsp -g -o CMakeFiles\\simulator.dir\\src\\Kinematics.cpp.obj -c C:\\Users\\tomam\\Documents\\quadsquad2026\\src\\Kinematics.cpp",
+  "file": "C:/Users/tomam/Documents/quadsquad2026/src/Kinematics.cpp",
+  "output": "CMakeFiles/simulator.dir/src/Kinematics.cpp.obj"
+},
+{
+  "directory": "C:/Users/tomam/Documents/quadsquad2026/build",
+  "command": "C:\\Users\\tomam\\Documents\\w64devkit\\bin\\c++.exe  @CMakeFiles/simulator.dir/includes_CXX.rsp -g -o CMakeFiles\\simulator.dir\\src\\Odometry.cpp.obj -c C:\\Users\\tomam\\Documents\\quadsquad2026\\src\\Odometry.cpp",
+  "file": "C:/Users/tomam/Documents/quadsquad2026/src/Odometry.cpp",
+  "output": "CMakeFiles/simulator.dir/src/Odometry.cpp.obj"
+},
+{
+  "directory": "C:/Users/tomam/Documents/quadsquad2026/build",
+  "command": "C:\\Users\\tomam\\Documents\\w64devkit\\bin\\c++.exe  @CMakeFiles/simulator.dir/includes_CXX.rsp -g -o CMakeFiles\\simulator.dir\\src\\Quadcopter.cpp.obj -c C:\\Users\\tomam\\Documents\\quadsquad2026\\src\\Quadcopter.cpp",
+  "file": "C:/Users/tomam/Documents/quadsquad2026/src/Quadcopter.cpp",
+  "output": "CMakeFiles/simulator.dir/src/Quadcopter.cpp.obj"
+},
+{
+  "directory": "C:/Users/tomam/Documents/quadsquad2026/build",
+  "command": "C:\\Users\\tomam\\Documents\\w64devkit\\bin\\c++.exe  @CMakeFiles/simulator.dir/includes_CXX.rsp -g -o CMakeFiles\\simulator.dir\\src\\Util.cpp.obj -c C:\\Users\\tomam\\Documents\\quadsquad2026\\src\\Util.cpp",
+  "file": "C:/Users/tomam/Documents/quadsquad2026/src/Util.cpp",
+  "output": "CMakeFiles/simulator.dir/src/Util.cpp.obj"
+},
+{
+  "directory": "C:/Users/tomam/Documents/quadsquad2026/build",
+  "command": "C:\\Users\\tomam\\Documents\\w64devkit\\bin\\c++.exe  @CMakeFiles/simulator.dir/includes_CXX.rsp -g -o CMakeFiles\\simulator.dir\\src\\simulator.cpp.obj -c C:\\Users\\tomam\\Documents\\quadsquad2026\\src\\simulator.cpp",
+  "file": "C:/Users/tomam/Documents/quadsquad2026/src/simulator.cpp",
+  "output": "CMakeFiles/simulator.dir/src/simulator.cpp.obj"
+}
+]

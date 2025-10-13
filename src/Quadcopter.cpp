@@ -1,4 +1,7 @@
 #include "Quadcopter.h"
+#include "Kinematics.h"
+#include "Util.h"
+#include "Constants.h"
 #include <array>
 #include <cmath>
 
@@ -48,47 +51,55 @@ double QCAcceleration::getZ() {
     return accel_z;
 }
 
-Rotation3d::Rotation3d(double yaw, double pitch, double roll) : yaw(yaw), pitch(pitch), roll(roll){
+QCState::QCState(Pose3d pose, Pose3d velocity, MotorVelocities motorVelocities, double time): pose(pose), velocity(velocity), motorVelocities(motorVelocities), time(time){
 
 }
 
-double Rotation3d::getYaw() {
-    return yaw;
+Pose3d QCState::getPose() {
+    return pose;
 }
 
-double Rotation3d::getPitch() {
-    return pitch;
+Pose3d QCState::getVelocity() {
+    return velocity;
 }
 
-double Rotation3d::getRoll() {
-    return roll;
+MotorVelocities QCState::getMotorVelocities() {
+    return motorVelocities;
 }
 
-// Returns a normalized direction vector (x, y, z)
-// representing the body -Z axis in world coordinates
-// (assuming thrust acts along body -Z)
-std::array<double, 3> Rotation3d::thrustDirection() const {
-    double cy = std::cos(this->yaw);
-    double sy = std::sin(this->yaw);
-    double cp = std::cos(this->pitch);
-    double sp = std::sin(this->pitch);
-    double cr = std::cos(this->roll);
-    double sr = std::sin(this->roll);
-
-    // Combined rotation matrix (ZYX: yaw → pitch → roll)
-    // We only need the 3rd column (direction of body -Z axis)
-    // Because the thrust points opposite body Z.
-    double x = -(cy * sp * cr + sy * sr);
-    double y = -(sy * sp * cr - cy * sr);
-    double z = -(cp * cr);
-
-    // Normalize to ensure it’s a unit vector
-    double mag = std::sqrt(x*x + y*y + z*z);
-    return { x / mag, y / mag, z / mag };
+double QCState::getTime(){
+    return time;
 }
 
-// Returns the full thrust vector = unit direction × thrust magnitude
-std::array<double, 3> Rotation3d::thrustVector(double thrustMagnitude) const {
-    auto dir = thrustDirection();
-    return { dir[0] * thrustMagnitude, dir[1] * thrustMagnitude, dir[2] * thrustMagnitude };
+QCState QCState::predict(double timestep) {
+    QCAcceleration accel = velocitiesToAccel(motorVelocities, pose.getRotation());
+    double drag_x = -velocity.getX() * LINEAR_DRAG_COEFF_XY;
+    double drag_y = -velocity.getY() * LINEAR_DRAG_COEFF_XY;
+    double drag_z = -velocity.getZ() * LINEAR_DRAG_COEFF_Z;
+
+    double ang_drag_x = -velocity.getRotation().getRoll() * ANGULAR_DRAG_COEFF_XY;
+    double ang_drag_y = -velocity.getRotation().getPitch() * ANGULAR_DRAG_COEFF_XY;
+    double ang_drag_z = -velocity.getRotation().getYaw() * ANGULAR_DRAG_COEFF_Z;
+
+    double newVX = (velocity.getX() + ((accel.getX() + drag_x) * timestep));
+    double newVY = (velocity.getY() + ((accel.getY() + drag_x) * timestep));
+    double newVZ = (velocity.getZ() + ((accel.getZ() + drag_x) * timestep));
+
+    double newAZ = velocity.getRotation().getYaw() + ((accel.getAngular().getYaw() + ang_drag_z) * timestep);
+    double newAY = velocity.getRotation().getPitch() + ((accel.getAngular().getPitch() + ang_drag_y) * timestep);
+    double newAX = velocity.getRotation().getRoll() + ((accel.getAngular().getRoll() + ang_drag_x) * timestep);
+
+    double newPX = pose.getX() + (newVX * timestep);
+    double newPY = pose.getY() + (newVY * timestep);
+    double newPZ = pose.getZ() + (newVZ * timestep);
+    double newPAZ = pose.getRotation().getYaw() + (newAZ * timestep);
+    double newPAY = pose.getRotation().getPitch() + (newAY * timestep);
+    double newPAX = pose.getRotation().getRoll() + (newAX * timestep);
+
+    return QCState(
+        Pose3d(Translation3d(newPX,newPY,newPZ), Rotation3d(newPAZ,newPAY,newPAX)),
+        Pose3d(Translation3d(newVX,newVY,newVZ), Rotation3d(newAZ, newAY, newAX)),
+        motorVelocities,
+        time+timestep
+    );
 }

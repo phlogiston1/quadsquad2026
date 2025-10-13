@@ -116,24 +116,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named qc_control
+# Target rules for targets named simulator
 
 # Build rule for target.
-qc_control: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 qc_control
-.PHONY : qc_control
+simulator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 simulator
+.PHONY : simulator
 
 # fast build rule for target.
-qc_control/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\qc_control.dir\build.make CMakeFiles/qc_control.dir/build
-.PHONY : qc_control/fast
+simulator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulator.dir\build.make CMakeFiles/simulator.dir/build
+.PHONY : simulator/fast
 
 src/InverseKinematics.obj: src/InverseKinematics.cpp.obj
 .PHONY : src/InverseKinematics.obj
 
 # target to build an object file
 src/InverseKinematics.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\qc_control.dir\build.make CMakeFiles/qc_control.dir/src/InverseKinematics.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulator.dir\build.make CMakeFiles/simulator.dir/src/InverseKinematics.cpp.obj
 .PHONY : src/InverseKinematics.cpp.obj
 
 src/InverseKinematics.i: src/InverseKinematics.cpp.i
@@ -141,7 +141,7 @@ src/InverseKinematics.i: src/InverseKinematics.cpp.i
 
 # target to preprocess a source file
 src/InverseKinematics.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\qc_control.dir\build.make CMakeFiles/qc_control.dir/src/InverseKinematics.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulator.dir\build.make CMakeFiles/simulator.dir/src/InverseKinematics.cpp.i
 .PHONY : src/InverseKinematics.cpp.i
 
 src/InverseKinematics.s: src/InverseKinematics.cpp.s
@@ -149,7 +149,7 @@ src/InverseKinematics.s: src/InverseKinematics.cpp.s
 
 # target to generate assembly for a file
 src/InverseKinematics.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\qc_control.dir\build.make CMakeFiles/qc_control.dir/src/InverseKinematics.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulator.dir\build.make CMakeFiles/simulator.dir/src/InverseKinematics.cpp.s
 .PHONY : src/InverseKinematics.cpp.s
 
 src/Kinematics.obj: src/Kinematics.cpp.obj
@@ -157,7 +157,7 @@ src/Kinematics.obj: src/Kinematics.cpp.obj
 
 # target to build an object file
 src/Kinematics.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\qc_control.dir\build.make CMakeFiles/qc_control.dir/src/Kinematics.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulator.dir\build.make CMakeFiles/simulator.dir/src/Kinematics.cpp.obj
 .PHONY : src/Kinematics.cpp.obj
 
 src/Kinematics.i: src/Kinematics.cpp.i
@@ -165,7 +165,7 @@ src/Kinematics.i: src/Kinematics.cpp.i
 
 # target to preprocess a source file
 src/Kinematics.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\qc_control.dir\build.make CMakeFiles/qc_control.dir/src/Kinematics.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulator.dir\build.make CMakeFiles/simulator.dir/src/Kinematics.cpp.i
 .PHONY : src/Kinematics.cpp.i
 
 src/Kinematics.s: src/Kinematics.cpp.s
@@ -173,15 +173,39 @@ src/Kinematics.s: src/Kinematics.cpp.s
 
 # target to generate assembly for a file
 src/Kinematics.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\qc_control.dir\build.make CMakeFiles/qc_control.dir/src/Kinematics.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulator.dir\build.make CMakeFiles/simulator.dir/src/Kinematics.cpp.s
 .PHONY : src/Kinematics.cpp.s
+
+src/Odometry.obj: src/Odometry.cpp.obj
+.PHONY : src/Odometry.obj
+
+# target to build an object file
+src/Odometry.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulator.dir\build.make CMakeFiles/simulator.dir/src/Odometry.cpp.obj
+.PHONY : src/Odometry.cpp.obj
+
+src/Odometry.i: src/Odometry.cpp.i
+.PHONY : src/Odometry.i
+
+# target to preprocess a source file
+src/Odometry.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulator.dir\build.make CMakeFiles/simulator.dir/src/Odometry.cpp.i
+.PHONY : src/Odometry.cpp.i
+
+src/Odometry.s: src/Odometry.cpp.s
+.PHONY : src/Odometry.s
+
+# target to generate assembly for a file
+src/Odometry.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulator.dir\build.make CMakeFiles/simulator.dir/src/Odometry.cpp.s
+.PHONY : src/Odometry.cpp.s
 
 src/Quadcopter.obj: src/Quadcopter.cpp.obj
 .PHONY : src/Quadcopter.obj
 
 # target to build an object file
 src/Quadcopter.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\qc_control.dir\build.make CMakeFiles/qc_control.dir/src/Quadcopter.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulator.dir\build.make CMakeFiles/simulator.dir/src/Quadcopter.cpp.obj
 .PHONY : src/Quadcopter.cpp.obj
 
 src/Quadcopter.i: src/Quadcopter.cpp.i
@@ -189,7 +213,7 @@ src/Quadcopter.i: src/Quadcopter.cpp.i
 
 # target to preprocess a source file
 src/Quadcopter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\qc_control.dir\build.make CMakeFiles/qc_control.dir/src/Quadcopter.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulator.dir\build.make CMakeFiles/simulator.dir/src/Quadcopter.cpp.i
 .PHONY : src/Quadcopter.cpp.i
 
 src/Quadcopter.s: src/Quadcopter.cpp.s
@@ -197,7 +221,7 @@ src/Quadcopter.s: src/Quadcopter.cpp.s
 
 # target to generate assembly for a file
 src/Quadcopter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\qc_control.dir\build.make CMakeFiles/qc_control.dir/src/Quadcopter.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulator.dir\build.make CMakeFiles/simulator.dir/src/Quadcopter.cpp.s
 .PHONY : src/Quadcopter.cpp.s
 
 src/Util.obj: src/Util.cpp.obj
@@ -205,7 +229,7 @@ src/Util.obj: src/Util.cpp.obj
 
 # target to build an object file
 src/Util.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\qc_control.dir\build.make CMakeFiles/qc_control.dir/src/Util.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulator.dir\build.make CMakeFiles/simulator.dir/src/Util.cpp.obj
 .PHONY : src/Util.cpp.obj
 
 src/Util.i: src/Util.cpp.i
@@ -213,7 +237,7 @@ src/Util.i: src/Util.cpp.i
 
 # target to preprocess a source file
 src/Util.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\qc_control.dir\build.make CMakeFiles/qc_control.dir/src/Util.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulator.dir\build.make CMakeFiles/simulator.dir/src/Util.cpp.i
 .PHONY : src/Util.cpp.i
 
 src/Util.s: src/Util.cpp.s
@@ -221,32 +245,32 @@ src/Util.s: src/Util.cpp.s
 
 # target to generate assembly for a file
 src/Util.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\qc_control.dir\build.make CMakeFiles/qc_control.dir/src/Util.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulator.dir\build.make CMakeFiles/simulator.dir/src/Util.cpp.s
 .PHONY : src/Util.cpp.s
 
-src/test.obj: src/test.cpp.obj
-.PHONY : src/test.obj
+src/simulator.obj: src/simulator.cpp.obj
+.PHONY : src/simulator.obj
 
 # target to build an object file
-src/test.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\qc_control.dir\build.make CMakeFiles/qc_control.dir/src/test.cpp.obj
-.PHONY : src/test.cpp.obj
+src/simulator.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulator.dir\build.make CMakeFiles/simulator.dir/src/simulator.cpp.obj
+.PHONY : src/simulator.cpp.obj
 
-src/test.i: src/test.cpp.i
-.PHONY : src/test.i
+src/simulator.i: src/simulator.cpp.i
+.PHONY : src/simulator.i
 
 # target to preprocess a source file
-src/test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\qc_control.dir\build.make CMakeFiles/qc_control.dir/src/test.cpp.i
-.PHONY : src/test.cpp.i
+src/simulator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulator.dir\build.make CMakeFiles/simulator.dir/src/simulator.cpp.i
+.PHONY : src/simulator.cpp.i
 
-src/test.s: src/test.cpp.s
-.PHONY : src/test.s
+src/simulator.s: src/simulator.cpp.s
+.PHONY : src/simulator.s
 
 # target to generate assembly for a file
-src/test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\qc_control.dir\build.make CMakeFiles/qc_control.dir/src/test.cpp.s
-.PHONY : src/test.cpp.s
+src/simulator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulator.dir\build.make CMakeFiles/simulator.dir/src/simulator.cpp.s
+.PHONY : src/simulator.cpp.s
 
 # Help Target
 help:
@@ -256,22 +280,25 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... qc_control
+	@echo ... simulator
 	@echo ... src/InverseKinematics.obj
 	@echo ... src/InverseKinematics.i
 	@echo ... src/InverseKinematics.s
 	@echo ... src/Kinematics.obj
 	@echo ... src/Kinematics.i
 	@echo ... src/Kinematics.s
+	@echo ... src/Odometry.obj
+	@echo ... src/Odometry.i
+	@echo ... src/Odometry.s
 	@echo ... src/Quadcopter.obj
 	@echo ... src/Quadcopter.i
 	@echo ... src/Quadcopter.s
 	@echo ... src/Util.obj
 	@echo ... src/Util.i
 	@echo ... src/Util.s
-	@echo ... src/test.obj
-	@echo ... src/test.i
-	@echo ... src/test.s
+	@echo ... src/simulator.obj
+	@echo ... src/simulator.i
+	@echo ... src/simulator.s
 .PHONY : help
 
 

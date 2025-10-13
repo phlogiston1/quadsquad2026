@@ -12,5 +12,11 @@
 //thrust calculation based on the formula: Thrust = THRUST_COEFF * AIR_DENSITY * ROTOR_AREA * (rotor velocity * ROTOR_RADIUS)^2
 //which can be simplified to Thrust = THRUST_COEFF * rotor velocity^2 (where thrust coeff is empirically measured)
 
-#define DRAG_COEFF 0.1 //This is used to calculate the angular force produced by the rotors in the plane of the quadcopter.
+#define ROTOR_DRAG_COEFF 0.1 //This is used to calculate the angular force produced by the rotors about the Z axis.
 //again the formula is DRAG_COEFF * rotor velocity^2
+
+//super simple drag formula F = -kv. Simple, but might require manual tuning.
+#define LINEAR_DRAG_COEFF_XY 10
+#define LINEAR_DRAG_COEFF_Z 10
+#define ANGULAR_DRAG_COEFF_XY 10
+#define ANGULAR_DRAG_COEFF_Z 10
