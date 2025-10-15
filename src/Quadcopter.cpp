@@ -68,6 +68,10 @@ MotorVelocities QCState::getMotorVelocities() {
     return motorVelocities;
 }
 
+void QCState::setMotorVelocities(MotorVelocities newVels) {
+    motorVelocities = newVels;
+}
+
 double QCState::getTime(){
     return time;
 }
@@ -78,7 +82,7 @@ QCState QCState::predict(double timestep) {
     double drag_y = -velocity.getY() * LINEAR_DRAG_COEFF_XY;
     double drag_z = -velocity.getZ() * LINEAR_DRAG_COEFF_Z;
 
-    std::cout << "Drag: " << drag_z << " Z Velocity: " << velocity.getZ() << "\n";
+    // std::cout << "Drag: " << drag_z << " Z Velocity: " << velocity.getZ() << "\n";
 
     double ang_drag_x = -velocity.getRotation().getRoll() * ANGULAR_DRAG_COEFF_XY;
     double ang_drag_y = -velocity.getRotation().getPitch() * ANGULAR_DRAG_COEFF_XY;

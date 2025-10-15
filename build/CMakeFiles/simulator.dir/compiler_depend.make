@@ -3059,6 +3059,7 @@ CMakeFiles/simulator.dir/src/simulator.cpp.o: /home/seanb/Documents/quadsquad202
   _deps/foxglove-src/include/foxglove/server/fetch_asset.hpp \
   _deps/foxglove-src/include/foxglove/server/parameter.hpp \
   _deps/foxglove-src/include/foxglove/server/service.hpp \
+  /home/seanb/Documents/quadsquad2026/include/Constants.h \
   /home/seanb/Documents/quadsquad2026/include/Kinematics.h \
   /home/seanb/Documents/quadsquad2026/include/Quadcopter.h \
   /home/seanb/Documents/quadsquad2026/include/Util.h \

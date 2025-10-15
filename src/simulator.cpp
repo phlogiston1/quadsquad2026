@@ -5,6 +5,7 @@
 #include <foxglove/mcap.hpp>
 #include <foxglove/schemas.hpp>
 #include <foxglove/server.hpp>
+#include "Constants.h"
 
 #include <atomic>
 #include <chrono>
@@ -29,7 +30,7 @@ bool replace(std::string& str, const std::string& from, const std::string& to) {
 
 int main(){
     std::cout << "hi" << std::endl;
-    MotorVelocities testV = MotorVelocities(3.1,3,3,3);
+    MotorVelocities testV = MotorVelocities(2000,2000,2000,2000);
     QCAcceleration test = velocitiesToAccel(testV, Rotation3d(0,0,0));
     QCState testSt = QCState(
         Pose3d(Translation3d(0,0,0), Rotation3d(0,0,0)),
@@ -109,6 +110,14 @@ int main(){
         if(numIters > 0){
             next = next.predict(now - last);
         }
+        if(numIters > 100) {
+            auto angle = next.getPose().getRotation().getRoll();
+            std::cout << "Angle: " << angle << "\n";
+            double baseSpeed = 2000;
+            double adjust = -(1-angle) * 1000;
+            MotorVelocities newVels = MotorVelocities(baseSpeed - adjust, baseSpeed, baseSpeed - adjust, baseSpeed);
+            next.setMotorVelocities(newVels);
+        }
         last = now;
         auto rotation = next.getPose().getRotation();
         // rotation.rotateBy(Rotation3d(0,0,M_PI)); //rotate 180 degrees around z axis to match foxglove coordinate system
@@ -119,7 +128,7 @@ int main(){
         size_channel.log(reinterpret_cast<const std::byte*>(msg.data()), msg.size());
 
         foxglove::schemas::CubePrimitive cube;
-        cube.size = foxglove::schemas::Vector3{1, 1, 0.3};
+        cube.size = foxglove::schemas::Vector3{QUADCOPTER_ROTOR_DISTANCE, QUADCOPTER_ROTOR_DISTANCE, 0.05};
         cube.color = foxglove::schemas::Color{1, 1, 1, 1};
         cube.pose = foxglove::schemas::Pose{foxglove::schemas::Vector3{-0.1*next.getPose().getX(), -0.1*next.getPose().getY(), -0.1*next.getPose().getZ()}, foxglove::schemas::Quaternion{quaternion.x,quaternion.y,quaternion.z,quaternion.w}};
 

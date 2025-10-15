@@ -50,6 +50,7 @@ class QCState {
         Pose3d getPose();
         Pose3d getVelocity();
         MotorVelocities getMotorVelocities();
+        void setMotorVelocities(MotorVelocities newVels);
         double getTime();
         QCState predict(double timestep);
 };
