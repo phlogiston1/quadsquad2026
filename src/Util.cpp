@@ -84,6 +84,42 @@ double Rotation3d::getRoll() {
     return roll;
 }
 
+Quaternion Rotation3d::toQuaternion() {
+    // Convert angles from degrees to radians if needed
+    double cy = cos(yaw * 0.5);
+    double sy = sin(yaw * 0.5);
+    double cp = cos(pitch * 0.5);
+    double sp = sin(pitch * 0.5);
+    double cr = cos(roll * 0.5);
+    double sr = sin(roll * 0.5);
+
+    Quaternion q;
+    q.w = cr * cp * cy + sr * sp * sy;
+    q.x = sr * cp * cy - cr * sp * sy;
+    q.y = cr * sp * cy + sr * cp * sy;
+    q.z = cr * cp * sy - sr * sp * cy;
+
+    return q;
+}
+
+void Rotation3d::rotateBy(Rotation3d other) {
+    // Combine rotations by adding Euler angles
+    this->yaw += other.yaw;
+    this->pitch += other.pitch;
+    this->roll += other.roll;
+
+    // Normalize angles to the range [-π, π]
+    auto normalizeAngle = [](double angle) {
+        while (angle > M_PI) angle -= 2 * M_PI;
+        while (angle < -M_PI) angle += 2 * M_PI;
+        return angle;
+    };
+
+    this->yaw = normalizeAngle(this->yaw);
+    this->pitch = normalizeAngle(this->pitch);
+    this->roll = normalizeAngle(this->roll);
+}
+
 // Returns a normalized direction vector (x, y, z)
 // representing the body -Z axis in world coordinates
 // (assuming thrust acts along body -Z)

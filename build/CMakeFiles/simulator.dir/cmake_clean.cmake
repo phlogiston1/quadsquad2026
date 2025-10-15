@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/simulator.dir/_deps/foxglove-src/src/channel.cpp.o"
+  "CMakeFiles/simulator.dir/_deps/foxglove-src/src/channel.cpp.o.d"
+  "CMakeFiles/simulator.dir/_deps/foxglove-src/src/context.cpp.o"
+  "CMakeFiles/simulator.dir/_deps/foxglove-src/src/context.cpp.o.d"
+  "CMakeFiles/simulator.dir/_deps/foxglove-src/src/error.cpp.o"
+  "CMakeFiles/simulator.dir/_deps/foxglove-src/src/error.cpp.o.d"
+  "CMakeFiles/simulator.dir/_deps/foxglove-src/src/foxglove.cpp.o"
+  "CMakeFiles/simulator.dir/_deps/foxglove-src/src/foxglove.cpp.o.d"
+  "CMakeFiles/simulator.dir/_deps/foxglove-src/src/mcap.cpp.o"
+  "CMakeFiles/simulator.dir/_deps/foxglove-src/src/mcap.cpp.o.d"
+  "CMakeFiles/simulator.dir/_deps/foxglove-src/src/schemas.cpp.o"
+  "CMakeFiles/simulator.dir/_deps/foxglove-src/src/schemas.cpp.o.d"
+  "CMakeFiles/simulator.dir/_deps/foxglove-src/src/server.cpp.o"
+  "CMakeFiles/simulator.dir/_deps/foxglove-src/src/server.cpp.o.d"
+  "CMakeFiles/simulator.dir/_deps/foxglove-src/src/server/connection_graph.cpp.o"
+  "CMakeFiles/simulator.dir/_deps/foxglove-src/src/server/connection_graph.cpp.o.d"
+  "CMakeFiles/simulator.dir/_deps/foxglove-src/src/server/fetch_asset.cpp.o"
+  "CMakeFiles/simulator.dir/_deps/foxglove-src/src/server/fetch_asset.cpp.o.d"
+  "CMakeFiles/simulator.dir/_deps/foxglove-src/src/server/parameter.cpp.o"
+  "CMakeFiles/simulator.dir/_deps/foxglove-src/src/server/parameter.cpp.o.d"
+  "CMakeFiles/simulator.dir/_deps/foxglove-src/src/server/service.cpp.o"
+  "CMakeFiles/simulator.dir/_deps/foxglove-src/src/server/service.cpp.o.d"
+  "CMakeFiles/simulator.dir/src/InverseKinematics.cpp.o"
+  "CMakeFiles/simulator.dir/src/InverseKinematics.cpp.o.d"
+  "CMakeFiles/simulator.dir/src/Kinematics.cpp.o"
+  "CMakeFiles/simulator.dir/src/Kinematics.cpp.o.d"
+  "CMakeFiles/simulator.dir/src/Odometry.cpp.o"
+  "CMakeFiles/simulator.dir/src/Odometry.cpp.o.d"
+  "CMakeFiles/simulator.dir/src/Quadcopter.cpp.o"
+  "CMakeFiles/simulator.dir/src/Quadcopter.cpp.o.d"
+  "CMakeFiles/simulator.dir/src/Util.cpp.o"
+  "CMakeFiles/simulator.dir/src/Util.cpp.o.d"
+  "CMakeFiles/simulator.dir/src/simulator.cpp.o"
+  "CMakeFiles/simulator.dir/src/simulator.cpp.o.d"
+  "simulator"
+  "simulator.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/simulator.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

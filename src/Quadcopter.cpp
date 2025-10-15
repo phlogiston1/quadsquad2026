@@ -3,6 +3,7 @@
 #include "Util.h"
 #include "Constants.h"
 #include <array>
+#include <iostream>
 #include <cmath>
 
 
@@ -77,13 +78,15 @@ QCState QCState::predict(double timestep) {
     double drag_y = -velocity.getY() * LINEAR_DRAG_COEFF_XY;
     double drag_z = -velocity.getZ() * LINEAR_DRAG_COEFF_Z;
 
+    std::cout << "Drag: " << drag_z << " Z Velocity: " << velocity.getZ() << "\n";
+
     double ang_drag_x = -velocity.getRotation().getRoll() * ANGULAR_DRAG_COEFF_XY;
     double ang_drag_y = -velocity.getRotation().getPitch() * ANGULAR_DRAG_COEFF_XY;
     double ang_drag_z = -velocity.getRotation().getYaw() * ANGULAR_DRAG_COEFF_Z;
 
     double newVX = (velocity.getX() + ((accel.getX() + drag_x) * timestep));
-    double newVY = (velocity.getY() + ((accel.getY() + drag_x) * timestep));
-    double newVZ = (velocity.getZ() + ((accel.getZ() + drag_x) * timestep));
+    double newVY = (velocity.getY() + ((accel.getY() + drag_y) * timestep));
+    double newVZ = (velocity.getZ() + ((accel.getZ() + drag_z) * timestep));
 
     double newAZ = velocity.getRotation().getYaw() + ((accel.getAngular().getYaw() + ang_drag_z) * timestep);
     double newAY = velocity.getRotation().getPitch() + ((accel.getAngular().getPitch() + ang_drag_y) * timestep);
@@ -95,6 +98,8 @@ QCState QCState::predict(double timestep) {
     double newPAZ = pose.getRotation().getYaw() + (newAZ * timestep);
     double newPAY = pose.getRotation().getPitch() + (newAY * timestep);
     double newPAX = pose.getRotation().getRoll() + (newAX * timestep);
+
+    if(newPZ > 0) newPZ = 0; //don't go underground
 
     return QCState(
         Pose3d(Translation3d(newPX,newPY,newPZ), Rotation3d(newPAZ,newPAY,newPAX)),

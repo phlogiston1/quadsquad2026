@@ -5,8 +5,8 @@ include(FetchContent)
 FetchContent_Declare(
     foxglove
     DOWNLOAD_EXTRACT_TIMESTAMP TRUE
-    URL https://github.com/foxglove/foxglove-sdk/releases/download/sdk%2Fv0.14.3/foxglove-v0.14.3-cpp-x86_64-pc-windows-msvc.zip
-    URL_HASH SHA256=a7d1deea49d86ba472d817a7eda507190969d6bd32041ae7441a82bade3afb45
+    URL https://github.com/foxglove/foxglove-sdk/releases/download/sdk%2Fv0.14.3/foxglove-v0.14.3-cpp-x86_64-unknown-linux-gnu.zip
+    URL_HASH SHA256=68efcf9b2cb2c94d37af77528748e13d3af548340539f70d7afffa2406d3b5e1
 )
 FetchContent_MakeAvailable(foxglove)
 
@@ -18,11 +18,24 @@ target_include_directories(simulator PRIVATE
     ${PROJECT_SOURCE_DIR}/include
 )
 
-target_link_libraries(simulator PRIVATE
-    ${foxglove_SOURCE_DIR}/lib/foxglove.lib
+# Add include directory for Foxglove SDK
+target_include_directories(simulator PRIVATE ${foxglove_SOURCE_DIR}/include)
+target_include_directories(simulator PRIVATE ${foxglove_SOURCE_DIR}/include/foxglove)
+
+# Find all Foxglove SDK source files
+file(GLOB FOXGLOVE_SOURCES CONFIGURE_DEPENDS
+    "${foxglove_SOURCE_DIR}/src/*.cpp"
+    "${foxglove_SOURCE_DIR}/src/server/*.cpp"
 )
 
-add_custom_command(TARGET simulator POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E copy_if_different
-        "${foxglove_SOURCE_DIR}/lib/foxglove.dll"
-        $<TARGET_FILE_DIR:simulator>)
+# Add Foxglove SDK source files
+target_sources(simulator PRIVATE ${FOXGLOVE_SOURCES})
+
+target_link_libraries(simulator PRIVATE
+    ${foxglove_SOURCE_DIR}/lib/libfoxglove.a
+)
+
+# add_custom_command(TARGET simulator POST_BUILD
+#     COMMAND ${CMAKE_COMMAND} -E copy_if_different
+#         "${foxglove_SOURCE_DIR}/lib/libfoxglove.a"
+#         $<TARGET_FILE_DIR:simulator>)

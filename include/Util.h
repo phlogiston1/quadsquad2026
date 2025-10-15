@@ -3,6 +3,10 @@
 #ifndef UTIL_H
 #define UTIL_H
 
+struct Quaternion {
+    double w, x, y, z;
+};
+
 class Translation3d {
     private:
         double x;
@@ -32,8 +36,10 @@ class Rotation3d {
         double getYaw();
         double getPitch();
         double getRoll();
+        void rotateBy(Rotation3d other);
         std::array<double, 3> thrustDirection() const;
         std::array<double, 3> thrustVector(double thrustMagnitude) const;
+        Quaternion toQuaternion();
         void print();
 };
 

@@ -57,7 +57,7 @@ QCAcceleration velocitiesToAccel (MotorVelocities velocities, Rotation3d measure
         angularAccel,
         (thrust * thrustDirection[0]) / QUADCOPTER_MASS,
         (thrust * thrustDirection[1]) / QUADCOPTER_MASS,
-        (thrust * thrustDirection[2]) / QUADCOPTER_MASS// + 9.8 //account for gravity of course
+        (thrust * thrustDirection[2]) / QUADCOPTER_MASS + 9.8 //account for gravity of course
     );
 
 }
