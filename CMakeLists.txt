@@ -10,17 +10,17 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(foxglove)
 
-file(GLOB CONTROL_SOURCES "src/*.cpp")
-add_executable(simulator ${CONTROL_SOURCES})
+file(GLOB SIMULATE_SOURCES "src/QCLib/*.cpp" "src/simulate.cpp")
+add_executable(simulate ${SIMULATE_SOURCES})
 
-target_include_directories(simulator PRIVATE
+target_include_directories(simulate PRIVATE
     ${foxglove_SOURCE_DIR}/include
     ${PROJECT_SOURCE_DIR}/include
 )
 
 # Add include directory for Foxglove SDK
-target_include_directories(simulator PRIVATE ${foxglove_SOURCE_DIR}/include)
-target_include_directories(simulator PRIVATE ${foxglove_SOURCE_DIR}/include/foxglove)
+target_include_directories(simulate PRIVATE ${foxglove_SOURCE_DIR}/include)
+target_include_directories(simulate PRIVATE ${foxglove_SOURCE_DIR}/include/foxglove)
 
 # Find all Foxglove SDK source files
 file(GLOB FOXGLOVE_SOURCES CONFIGURE_DEPENDS
@@ -29,13 +29,13 @@ file(GLOB FOXGLOVE_SOURCES CONFIGURE_DEPENDS
 )
 
 # Add Foxglove SDK source files
-target_sources(simulator PRIVATE ${FOXGLOVE_SOURCES})
+target_sources(simulate PRIVATE ${FOXGLOVE_SOURCES})
 
-target_link_libraries(simulator PRIVATE
+target_link_libraries(simulate PRIVATE
     ${foxglove_SOURCE_DIR}/lib/libfoxglove.a
 )
 
-# add_custom_command(TARGET simulator POST_BUILD
+# add_custom_command(TARGET simulate POST_BUILD
 #     COMMAND ${CMAKE_COMMAND} -E copy_if_different
 #         "${foxglove_SOURCE_DIR}/lib/libfoxglove.a"
-#         $<TARGET_FILE_DIR:simulator>)
+#         $<TARGET_FILE_DIR:simulate>)

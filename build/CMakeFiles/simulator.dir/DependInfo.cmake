@@ -19,12 +19,11 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/seanb/Documents/quadsquad2026/build/_deps/foxglove-src/src/server/fetch_asset.cpp" "CMakeFiles/simulator.dir/_deps/foxglove-src/src/server/fetch_asset.cpp.o" "gcc" "CMakeFiles/simulator.dir/_deps/foxglove-src/src/server/fetch_asset.cpp.o.d"
   "/home/seanb/Documents/quadsquad2026/build/_deps/foxglove-src/src/server/parameter.cpp" "CMakeFiles/simulator.dir/_deps/foxglove-src/src/server/parameter.cpp.o" "gcc" "CMakeFiles/simulator.dir/_deps/foxglove-src/src/server/parameter.cpp.o.d"
   "/home/seanb/Documents/quadsquad2026/build/_deps/foxglove-src/src/server/service.cpp" "CMakeFiles/simulator.dir/_deps/foxglove-src/src/server/service.cpp.o" "gcc" "CMakeFiles/simulator.dir/_deps/foxglove-src/src/server/service.cpp.o.d"
-  "/home/seanb/Documents/quadsquad2026/src/InverseKinematics.cpp" "CMakeFiles/simulator.dir/src/InverseKinematics.cpp.o" "gcc" "CMakeFiles/simulator.dir/src/InverseKinematics.cpp.o.d"
-  "/home/seanb/Documents/quadsquad2026/src/Kinematics.cpp" "CMakeFiles/simulator.dir/src/Kinematics.cpp.o" "gcc" "CMakeFiles/simulator.dir/src/Kinematics.cpp.o.d"
-  "/home/seanb/Documents/quadsquad2026/src/Odometry.cpp" "CMakeFiles/simulator.dir/src/Odometry.cpp.o" "gcc" "CMakeFiles/simulator.dir/src/Odometry.cpp.o.d"
-  "/home/seanb/Documents/quadsquad2026/src/Quadcopter.cpp" "CMakeFiles/simulator.dir/src/Quadcopter.cpp.o" "gcc" "CMakeFiles/simulator.dir/src/Quadcopter.cpp.o.d"
-  "/home/seanb/Documents/quadsquad2026/src/Util.cpp" "CMakeFiles/simulator.dir/src/Util.cpp.o" "gcc" "CMakeFiles/simulator.dir/src/Util.cpp.o.d"
-  "/home/seanb/Documents/quadsquad2026/src/simulator.cpp" "CMakeFiles/simulator.dir/src/simulator.cpp.o" "gcc" "CMakeFiles/simulator.dir/src/simulator.cpp.o.d"
+  "/home/seanb/Documents/quadsquad2026/src/QCLib/InverseKinematics.cpp" "CMakeFiles/simulator.dir/src/QCLib/InverseKinematics.cpp.o" "gcc" "CMakeFiles/simulator.dir/src/QCLib/InverseKinematics.cpp.o.d"
+  "/home/seanb/Documents/quadsquad2026/src/QCLib/Kinematics.cpp" "CMakeFiles/simulator.dir/src/QCLib/Kinematics.cpp.o" "gcc" "CMakeFiles/simulator.dir/src/QCLib/Kinematics.cpp.o.d"
+  "/home/seanb/Documents/quadsquad2026/src/QCLib/Odometry.cpp" "CMakeFiles/simulator.dir/src/QCLib/Odometry.cpp.o" "gcc" "CMakeFiles/simulator.dir/src/QCLib/Odometry.cpp.o.d"
+  "/home/seanb/Documents/quadsquad2026/src/QCLib/Quadcopter.cpp" "CMakeFiles/simulator.dir/src/QCLib/Quadcopter.cpp.o" "gcc" "CMakeFiles/simulator.dir/src/QCLib/Quadcopter.cpp.o.d"
+  "/home/seanb/Documents/quadsquad2026/src/QCLib/Util.cpp" "CMakeFiles/simulator.dir/src/QCLib/Util.cpp.o" "gcc" "CMakeFiles/simulator.dir/src/QCLib/Util.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
