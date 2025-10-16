@@ -1,7 +1,7 @@
 #include "Quadcopter.h"
 #include "Kinematics.h"
 #include "Util.h"
-#include "Constants.h"
+#include "Configuration.h"
 #include <array>
 #include <iostream>
 #include <cmath>
@@ -106,8 +106,8 @@ QCState QCState::predict(double timestep) {
     if(newPZ > 0) newPZ = 0; //don't go underground
 
     return QCState(
-        Pose3d(Translation3d(newPX,newPY,newPZ), Rotation3d(newPAZ,newPAY,newPAX)),
-        Pose3d(Translation3d(newVX,newVY,newVZ), Rotation3d(newAZ, newAY, newAX)),
+        Pose3d(Vector3d(newPX,newPY,newPZ), Rotation3d(newPAZ,newPAY,newPAX)),
+        Pose3d(Vector3d(newVX,newVY,newVZ), Rotation3d(newAZ, newAY, newAX)),
         motorVelocities,
         time+timestep
     );

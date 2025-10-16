@@ -10,6 +10,23 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(foxglove)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+################ SIMULATOR ################
+
 file(GLOB SIMULATE_SOURCES "src/QCLib/*.cpp" "src/simulate.cpp")
 add_executable(simulate ${SIMULATE_SOURCES})
 
@@ -35,7 +52,24 @@ target_link_libraries(simulate PRIVATE
     ${foxglove_SOURCE_DIR}/lib/libfoxglove.a
 )
 
-# add_custom_command(TARGET simulate POST_BUILD
-#     COMMAND ${CMAKE_COMMAND} -E copy_if_different
-#         "${foxglove_SOURCE_DIR}/lib/libfoxglove.a"
-#         $<TARGET_FILE_DIR:simulate>)
+
+
+
+
+################ TEST EXECUTABLE ################ (must have the exact same configuration as simulate)
+
+file(GLOB TEST_SOURCES "src/QCLib/*.cpp" "src/test.cpp")
+add_executable(test ${TEST_SOURCES})
+
+target_include_directories(test PRIVATE
+    ${foxglove_SOURCE_DIR}/include
+    ${foxglove_SOURCE_DIR}/include/foxglove
+    ${PROJECT_SOURCE_DIR}/include
+)
+
+target_sources(test PRIVATE ${FOXGLOVE_SOURCES})
+
+target_link_libraries(test PRIVATE
+    ${foxglove_SOURCE_DIR}/lib/libfoxglove.a
+    pthread
+)

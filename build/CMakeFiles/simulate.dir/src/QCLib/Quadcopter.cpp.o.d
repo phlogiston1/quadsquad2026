@@ -35,7 +35,7 @@ CMakeFiles/simulate.dir/src/QCLib/Quadcopter.cpp.o: \
  /home/seanb/Documents/quadsquad2026/include/Kinematics.h \
  /home/seanb/Documents/quadsquad2026/include/Quadcopter.h \
  /home/seanb/Documents/quadsquad2026/include/Util.h \
- /home/seanb/Documents/quadsquad2026/include/Constants.h \
+ /home/seanb/Documents/quadsquad2026/include/Configuration.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/c++/13/ostream /usr/include/c++/13/ios \
  /usr/include/c++/13/iosfwd /usr/include/c++/13/bits/stringfwd.h \

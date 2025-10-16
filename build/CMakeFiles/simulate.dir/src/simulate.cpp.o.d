@@ -206,7 +206,7 @@ CMakeFiles/simulate.dir/src/simulate.cpp.o: \
  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
  /usr/include/c++/13/variant /usr/include/c++/13/bits/parse_numbers.h \
  /home/seanb/Documents/quadsquad2026/build/_deps/foxglove-src/include/foxglove/server/service.hpp \
- /home/seanb/Documents/quadsquad2026/include/Constants.h \
+ /home/seanb/Documents/quadsquad2026/include/Configuration.h \
  /usr/include/c++/13/atomic /usr/include/c++/13/chrono \
  /usr/include/c++/13/bits/chrono.h /usr/include/c++/13/ratio \
  /usr/include/c++/13/limits /usr/include/c++/13/ctime \

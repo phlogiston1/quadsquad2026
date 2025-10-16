@@ -33,7 +33,7 @@ CMakeFiles/simulate.dir/src/QCLib/Kinematics.cpp.o: \
  /usr/include/c++/13/bits/predefined_ops.h /usr/include/c++/13/bit \
  /usr/include/c++/13/bits/range_access.h \
  /home/seanb/Documents/quadsquad2026/include/Util.h \
- /home/seanb/Documents/quadsquad2026/include/Constants.h \
+ /home/seanb/Documents/quadsquad2026/include/Configuration.h \
  /home/seanb/Documents/quadsquad2026/include/Util.h \
  /usr/include/c++/13/cmath /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/math.h \

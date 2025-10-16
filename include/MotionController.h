@@ -2,13 +2,13 @@
 class MotionController {
     public:
         virtual ~MotionController() = default;
-        virtual MotorVelocities calculateMotorVelocities(const QCState& currentState, const Translation3d& targetVelocity, double targetYaw) = 0;
+        virtual MotorVelocities calculateMotorVelocities(const QCState& currentState, const Vector3d& targetVelocity, double targetYaw) = 0;
 };
 
 class ManualController : public MotionController {
     public:
         ManualController(MotorVelocities initialVels);
-        MotorVelocities calculateMotorVelocities(const QCState& currentState, const Translation3d& targetVelocity, double targetYaw ) override;
+        MotorVelocities calculateMotorVelocities(const QCState& currentState, const Vector3d& targetVelocity, double targetYaw ) override;
         void setMotorVelocities(MotorVelocities newVels);
     private:
         MotorVelocities motorVels;
@@ -17,7 +17,7 @@ class ManualController : public MotionController {
 class PIDController : public MotionController {
     public:
         PIDController(Pose3d kp, Pose3d ki, Pose3d kd, MotorVelocities hoverVels);
-        MotorVelocities calculateMotorVelocities(const QCState& currentState, const Translation3d& targetVelocity, double targetYaw) override;
+        MotorVelocities calculateMotorVelocities(const QCState& currentState, const Vector3d& targetVelocity, double targetYaw) override;
     private:
         Pose3d kp;
         Pose3d ki;
@@ -31,5 +31,5 @@ class PIDController : public MotionController {
 class QuadSquadController : public MotionController {
     public:
         QuadSquadController(MotorVelocities hoverVels);
-        MotorVelocities calculateMotorVelocities(const QCState& currentState, const Translation3d& targetVelocity, double targetYaw) override;
+        MotorVelocities calculateMotorVelocities(const QCState& currentState, const Vector3d& targetVelocity, double targetYaw) override;
 };

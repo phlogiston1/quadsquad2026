@@ -10,7 +10,7 @@
  */
 
 #include "Kinematics.h"
-#include "Constants.h"
+#include "Configuration.h"
 #include "Util.h"
 #include <cmath>
 #include <array>
