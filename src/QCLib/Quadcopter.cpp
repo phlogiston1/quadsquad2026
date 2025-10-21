@@ -27,6 +27,15 @@ double MotorVelocities::getRearLeft() const {
     return rearLeft;
 }
 
+MotorVelocities MotorVelocities::limit(double maxVelocity) const {
+    return MotorVelocities(
+        std::min(frontLeft, maxVelocity),
+        std::min(frontRight, maxVelocity),
+        std::min(rearLeft, maxVelocity),
+        std::min(rearRight, maxVelocity)
+    );
+}
+
 
 QCAcceleration::QCAcceleration(Rotation3d angular_accel, double accel_x, double accel_y, double accel_z):
     angular_accel(angular_accel),

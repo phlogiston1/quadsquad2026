@@ -1,9 +1,11 @@
+#ifndef INVERSE_KINEMATICS_H
+#define INVERSE_KINEMATICS_H
+
 #include "Quadcopter.h"
 
 /**
  * @brief Implements inverse kinematics for the quadcopter
- * 
- * This is the fun part. Here's the plan.
+ *
  * Step 1: Given a desired acceleration vector and yaw rate, calculate the ideal orientation and thrust for the quadcopter, 
  * ignoring frame and motor acceleration limits.
  * Step 2: Given the ideal orientation and thrust, calculate the motor velocities that would best achieve this
@@ -25,6 +27,8 @@ struct TargetQCState {
 
 TargetQCState calculateTargetState(QCState currentState, Vector3d targetAccel, double targetYaw);
 
-InverseKinematicResult optimizeMotorVelocitiesForDirection(QCState currentState, TargetQCState targetState);
+InverseKinematicResult optimizeMotorVelocitiesForDirection(QCState currentState, TargetQCState targetState, double timestep);
 
 InverseKinematicResult calculateMotorVelocitiesForAccel(QCState currentState, TargetQCState targetState);
+
+#endif

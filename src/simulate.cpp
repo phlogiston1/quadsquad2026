@@ -17,6 +17,7 @@
 #include "Quadcopter.h"
 #include "Util.h"
 #include "Kinematics.h"
+#include "InverseKinematics.h"
 
 using namespace std::chrono_literals;
 
@@ -107,24 +108,25 @@ int main(){
             std::chrono::system_clock::now().time_since_epoch()
         ).count();
 
+
+        if(numIters > 100) {
+            auto ikinres = optimizeMotorVelocitiesForDirection(
+                next,
+                calculateTargetState(
+                    next,
+                    Vector3d(1,0,-next.getVelocity().getZ() /2),
+                    0.1
+                ),
+                (now - last)
+            );
+            next.setMotorVelocities(ikinres.motorVelocities);
+        }
         if(numIters > 0){
             next = next.predict(now - last);
         }
-        if(numIters > 100) {
-            auto angle = next.getPose().getRotation().getRoll();
-            std::cout << "Angle: " << angle << "\n";
-            double baseSpeed = 2000;
-            double adjust = -(1-angle) * 1000;
-            MotorVelocities newVels = MotorVelocities(baseSpeed - adjust, baseSpeed, baseSpeed - adjust, baseSpeed);
-            next.setMotorVelocities(newVels);
-        }
         last = now;
         auto rotation = next.getPose().getRotation();
-        // rotation.rotateBy(Rotation3d(0,0,M_PI)); //rotate 180 degrees around z axis to match foxglove coordinate system
 
-        double size = std::abs(std::sin(now)) + 1.0;
-        std::string msg = "{\"size\": " + std::to_string(size) + "}";
-        size_channel.log(reinterpret_cast<const std::byte*>(msg.data()), msg.size());
 
         foxglove::schemas::CubePrimitive cube;
         cube.size = foxglove::schemas::Vector3{QUADCOPTER_ROTOR_DISTANCE, QUADCOPTER_ROTOR_DISTANCE, 0.05};

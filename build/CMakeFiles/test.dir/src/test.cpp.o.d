@@ -34,6 +34,7 @@ CMakeFiles/test.dir/src/test.cpp.o: \
  /home/seanb/Documents/quadsquad2026/include/Util.h \
  /home/seanb/Documents/quadsquad2026/include/InverseKinematics.h \
  /home/seanb/Documents/quadsquad2026/include/Quadcopter.h \
+ /home/seanb/Documents/quadsquad2026/include/Kinematics.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/c++/13/ostream /usr/include/c++/13/ios \
  /usr/include/c++/13/iosfwd /usr/include/c++/13/bits/stringfwd.h \

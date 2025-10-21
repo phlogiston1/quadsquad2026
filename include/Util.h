@@ -25,7 +25,9 @@ class Vector3d {
         Vector3d operator*(double scalar) const;
         Vector3d operator/(double scalar) const;
         Vector3d operator-() const;
+        Vector3d componentWiseMultiply(const Vector3d &other) const;
         Vector3d normalized() const;
+        double dot(const Vector3d& other) const;
         bool operator==(const Vector3d& other) const;
         void print();
 };
@@ -57,6 +59,9 @@ class Rotation3d {
         void printDegrees();
         void calculateYPRFromQuat();
         void calculateQuatFromYPR();
+        Vector3d getZAxis() const;
+        Vector3d getXAxis() const;
+        Vector3d getYAxis() const;
         static Rotation3d fromDegrees(double yaw, double pitch, double roll);
         static Rotation3d fromRotationMatrix(const Vector3d& x_axis, const Vector3d& y_axis, const Vector3d& z_axis);
 };

@@ -1,3 +1,7 @@
+/**
+ * @brief All the constants needed to characterize the quadcopter physics and controls
+ */
+
 #define LOOP_TIME 0.01 //main loop time in seconds
 
 //physical dimensions:

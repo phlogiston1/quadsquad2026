@@ -1,0 +1,62 @@
+# Compiled Object Files and Libraries
+*.o
+*.obj
+*.lo
+*.slo
+*.a
+*.lib
+*.so
+*.so.*
+*.dll
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Build Directories
+bin/
+obj/
+build/
+cmake-build-*/
+debug/
+release/
+
+# IDE Specific Files (e.g., Visual Studio, Qt Creator, Code::Blocks)
+.vs/
+*.suo
+*.user
+*.ncb
+*.opensdf
+*.sdf
+*.layout
+*.depend
+*.pro.user*
+*.qmake.cache
+*.qmake.stash
+object_script.*.Release
+object_script.*.Debug
+*_plugin_import.cpp
+
+# Temporary Files
+*~
+*.bak
+*.swp
+*.tmp
+*.log
+
+# Dependency Management (e.g., Conan)
+conan_build/
+conan_cache/
+
+# CMake specific files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+
+# Miscellaneous
+.DS_Store
+Thumbs.db

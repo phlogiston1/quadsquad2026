@@ -3316,6 +3316,7 @@ CMakeFiles/simulate.dir/src/simulate.cpp.o: /home/seanb/Documents/quadsquad2026/
   _deps/foxglove-src/include/foxglove/server/parameter.hpp \
   _deps/foxglove-src/include/foxglove/server/service.hpp \
   /home/seanb/Documents/quadsquad2026/include/Configuration.h \
+  /home/seanb/Documents/quadsquad2026/include/InverseKinematics.h \
   /home/seanb/Documents/quadsquad2026/include/Kinematics.h \
   /home/seanb/Documents/quadsquad2026/include/Quadcopter.h \
   /home/seanb/Documents/quadsquad2026/include/Util.h \

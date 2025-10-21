@@ -18,6 +18,8 @@ class MotorVelocities {
         double getFrontRight() const;
         double getRearLeft() const;
         double getRearRight() const;
+
+        MotorVelocities limit(double maxVelocity) const;
 };
 
 

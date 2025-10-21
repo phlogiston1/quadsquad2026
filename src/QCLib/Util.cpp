@@ -107,7 +107,9 @@ Vector3d Vector3d::operator/(double scalar) const {
 Vector3d Vector3d::operator-() const {
     return Vector3d(-x, -y, -z);
 }
-
+Vector3d Vector3d::componentWiseMultiply(const Vector3d& other) const {
+    return Vector3d(x * other.x, y * other.y, z * other.z);
+}
 bool Vector3d::operator==(const Vector3d& other) const {
     return (x == other.x) && (y == other.y) && (z == other.z);
 }
@@ -116,6 +118,10 @@ Vector3d Vector3d::normalized() const {
     double mag = getMagnitude();
     // if(mag == 0) throw std::runtime_error("Cannot normalize zero vector");
     return Vector3d(x/mag, y/mag, z/mag);
+}
+
+double Vector3d::dot(const Vector3d& other) const {
+    return x * other.x + y * other.y + z * other.z;
 }
 
 void Vector3d::print() {
@@ -253,6 +259,54 @@ double Rotation3d::getY() {
 double Rotation3d::getZ() {
     if (!hasQuatValues) calculateQuatFromYPR();
     return z;
+}
+
+Vector3d Rotation3d::getZAxis() const {
+    // Body Z axis in world coordinates
+    double cy = std::cos(this->yaw);
+    double sy = std::sin(this->yaw);
+    double cp = std::cos(this->pitch);
+    double sp = std::sin(this->pitch);
+    double cr = std::cos(this->roll);
+    double sr = std::sin(this->roll);
+
+    double x = sy * sr - cy * sp * cr;
+    double y = -cy * sr - sy * sp * cr;
+    double z = cp * cr;
+
+    return Vector3d(x, y, z).normalized();
+}
+
+Vector3d Rotation3d::getXAxis() const {
+    // Body X axis in world coordinates
+    double cy = std::cos(this->yaw);
+    double sy = std::sin(this->yaw);
+    double cp = std::cos(this->pitch);
+    double sp = std::sin(this->pitch);
+    double cr = std::cos(this->roll);
+    double sr = std::sin(this->roll);
+
+    double x = cy * cp;
+    double y = sy * cp;
+    double z = -sp;
+
+    return Vector3d(x, y, z).normalized();
+}
+
+Vector3d Rotation3d::getYAxis() const {
+    // Body Y axis in world coordinates
+    double cy = std::cos(this->yaw);
+    double sy = std::sin(this->yaw);
+    double cp = std::cos(this->pitch);
+    double sp = std::sin(this->pitch);
+    double cr = std::cos(this->roll);
+    double sr = std::sin(this->roll);
+
+    double x = cy * sp * sr - sy * cr;
+    double y = sy * sp * sr + cy * cr;
+    double z = cp * sr;
+
+    return Vector3d(x, y, z).normalized();
 }
 
 Rotation3d Rotation3d::normalized() {

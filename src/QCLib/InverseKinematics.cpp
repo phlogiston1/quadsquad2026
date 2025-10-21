@@ -16,23 +16,24 @@
 #include <cmath>
 #include <iostream>
 
-double velocityToThrust(double velocity) {
-    return THRUST_COEFF * velocity * velocity;
-}
 
 double thrustToVelocity(double thrust) {
     if(thrust < 0) return 0;
-    return std::sqrt(thrust / THRUST_COEFF);
+    return std::sqrt(thrust / THRUST_COEFF) * std::copysign(1.0, thrust);
 }
 
 TargetQCState calculateTargetState(QCState currentState, Vector3d targetAccel, double targetYawRate) {
     // Frame convention: +X forward, +Y right, +Z down (NED)
+    //account for gravity and drag:
+    targetAccel = targetAccel - Vector3d(0, 0, 9.8);
+    Vector3d dragForce = currentState.getVelocity().getTranslation().componentWiseMultiply(Vector3d(LINEAR_DRAG_COEFF_XY, LINEAR_DRAG_COEFF_XY, LINEAR_DRAG_COEFF_Z));
+    targetAccel = targetAccel + (dragForce / QUADCOPTER_MASS);
 
     // 1. Get current yaw (assumed to be around Z axis)
     double fixed_yaw = currentState.getPose().getRotation().getYaw();
 
     // 2. Normalize targetAccel to get direction (z_body axis)
-    Vector3d z_body = targetAccel.normalized(); // body Z axis in world frame (aligned with thrust direction)
+    Vector3d z_body = -targetAccel.normalized(); // body Z axis in world frame (aligned with thrust direction)
 
     // 3. Compute desired x_c from yaw (projected on horizontal plane)
     double cy = cos(fixed_yaw);
@@ -54,7 +55,16 @@ TargetQCState calculateTargetState(QCState currentState, Vector3d targetAccel, d
     Rotation3d targetAngle = Rotation3d::fromRotationMatrix(x_body, y_body, z_body);
 
     // 6. Compute thrust (F = ma)
-    double targetThrust = targetAccel.getMagnitude() * QUADCOPTER_MASS;
+    // Rather than computing thrust based off of the target acceleration magnitude,
+    // We want to compute the thrust based off of what is required to get the desired Z acceleration,
+    // *At the quadcopters current orientation*,
+    // since this will prevent the quadcopter from moving upward or downward while it is moving laterally.
+
+    // To do this, we project the target acceleration onto the quadcopter's current Z axis.
+    Vector3d currentZAxis = currentState.getPose().getRotation().getZAxis();
+    double z_accel = -targetAccel.dot(currentZAxis);
+    double targetThrust = z_accel * QUADCOPTER_MASS;
+    // double targetThrust = targetAccel.getZ() * QUADCOPTER_MASS;
 
     return TargetQCState{targetAngle, targetThrust, targetYawRate};
 }
@@ -64,10 +74,58 @@ InverseKinematicResult optimizeMotorVelocitiesForDirection(QCState currentState,
     double desiredAngularAccelPitch = (targetState.targetAngle.getPitch() - currentState.getPose().getRotation().getPitch()) / timestep;
     double desiredAngularAccelRoll = (targetState.targetAngle.getRoll() - currentState.getPose().getRotation().getRoll()) / timestep;
 
-    double torque_x = (desiredAngularAccelPitch * QUADCOPTER_MOI) / (QUADCOPTER_ROTOR_DISTANCE/2);
-    double torque_y = (desiredAngularAccelRoll * QUADCOPTER_MOI) / (QUADCOPTER_ROTOR_DISTANCE/2);
+    /*
+    These values give us two formulas that give us the difference in thrust between opposite motors:
+    tx = (rl - fr) - (rr - fl)
+    ty = (rl - fr) + (rr - fl)
 
-    //Step 2: Find the motor velocity needed to produce the desired yaw rate, from rotor drag torque=v^2 * DRAG_COEFF
-    
+    Math note: we can find the drag torque about the yaw axis for a given thrust using:
+    drag_torque = DRAG_COEFF * (thrust / THRUST_COEFF)
+    or drag_torque = (DRAG_COEFF / THRUST_COEFF) * thrust
 
+    since both drag torque and thrust are proportional to velocity squared
+    */
+    double torque_x = (desiredAngularAccelRoll * QUADCOPTER_MOI) / (QUADCOPTER_ROTOR_DISTANCE/2);
+    double torque_y = (desiredAngularAccelPitch * QUADCOPTER_MOI) / (QUADCOPTER_ROTOR_DISTANCE/2);
+
+
+    /*
+    Step 2: Find the *equivalent thrust difference* needed to produce the desired yaw rate, from rotor drag torque=v^2 * DRAG_COEFF
+    The reason I'm calculign them equivalent thrusts is so that we can just add them to the other thrust equations above.
+    This gives the formula:
+    equivalentThrustDifferenceYaw = (fl+rr) - (fr+rl) assuming front left rotor spins CW (negated for CCW)
+    */
+    double equivalentThrustDifferenceYaw = (targetState.targetYawRate * QUADCOPTER_MOI) / (ROTOR_DRAG_COEFF / THRUST_COEFF);
+    if(FRONT_LEFT_SPINS_CCW) equivalentThrustDifferenceYaw = -equivalentThrustDifferenceYaw;
+
+
+    /*
+    our final formulas for the thrusts are:
+    fl + fr + rl + rr = totalThrust
+    (rl - fr) - (rr - fl) = torque_x
+    (rl - fr) + (rr - fl) = torque_y
+    (fl + rr) - (fr + rl) = equivalentThrustDifferenceYaw
+
+    Solving these gives:
+    fl = (totalThrust + torque_x - torque_y + equivalentThrustDifferenceYaw) / 4;
+    fr = (totalThrust - torque_x - torque_y - equivalentThrustDifferenceYaw) / 4;
+    rl = (totalThrust + torque_x + torque_y - equivalentThrustDifferenceYaw) / 4;
+    rr = (totalThrust - torque_x + torque_y + equivalentThrustDifferenceYaw) / 4;
+    */
+
+    double fl_thrust = (targetState.targetThrust + torque_x - torque_y + equivalentThrustDifferenceYaw) / 4.0;
+    double fr_thrust = (targetState.targetThrust - torque_x - torque_y - equivalentThrustDifferenceYaw) / 4.0;
+    double rl_thrust = (targetState.targetThrust + torque_x + torque_y - equivalentThrustDifferenceYaw) / 4.0;
+    double rr_thrust = (targetState.targetThrust - torque_x + torque_y + equivalentThrustDifferenceYaw) / 4.0;
+    //Step 3: Convert thrusts to velocities
+    double fl_velocity = thrustToVelocity(fl_thrust);
+    double fr_velocity = thrustToVelocity(fr_thrust);
+    double rl_velocity = thrustToVelocity(rl_thrust);
+    double rr_velocity = thrustToVelocity(rr_thrust);
+
+    return InverseKinematicResult{
+        MotorVelocities{fl_velocity, fr_velocity, rl_velocity, rr_velocity},
+        QCAcceleration(Rotation3d(), 0,0,0), //TODO: calculate achieved acceleration
+        0.0 //TODO: calculate error magnitude
+    };
 }
