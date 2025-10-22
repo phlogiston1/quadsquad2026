@@ -110,7 +110,7 @@ int main(){
 
 
         if(numIters > 100) {
-            auto ikinres = optimizeMotorVelocitiesForDirection(
+            auto ikinres = optimizeMotorVelocities(
                 next,
                 calculateTargetState(
                     next,

@@ -10,10 +10,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
   "CMakeLists.txt"
   "foxglove-populate-prefix/tmp/foxglove-populate-mkdirs.cmake"
-  "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake"
-  "/usr/share/cmake-3.28/Modules/CMakeSystem.cmake.in"
   "/usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake"
   "/usr/share/cmake-3.28/Modules/ExternalProject.cmake"
@@ -38,7 +36,6 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "CMakeFiles/3.28.3/CMakeSystem.cmake"
   "foxglove-populate-prefix/tmp/foxglove-populate-mkdirs.cmake"
   "foxglove-populate-prefix/src/foxglove-populate-stamp/download-foxglove-populate.cmake"
   "foxglove-populate-prefix/src/foxglove-populate-stamp/extract-foxglove-populate.cmake"

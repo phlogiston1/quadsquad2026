@@ -30,7 +30,7 @@ int main() {
 
     std::cout << "Ideal State Thrust:" <<targetState.targetThrust << std::endl;
 
-    InverseKinematicResult ikResult = optimizeMotorVelocitiesForDirection(currentState, targetState, 1);
+    InverseKinematicResult ikResult = optimizeMotorVelocities(currentState, targetState, 1);
     std::cout << "\nInverse Kinematics Motor Velocities:\n\tFront Left: "
               << ikResult.motorVelocities.getFrontLeft() << ", \n\tFront Right: "
               << ikResult.motorVelocities.getFrontRight() << ", \n\tRear Left: "

@@ -69,7 +69,7 @@ TargetQCState calculateTargetState(QCState currentState, Vector3d targetAccel, d
     return TargetQCState{targetAngle, targetThrust, targetYawRate};
 }
 
-InverseKinematicResult optimizeMotorVelocitiesForDirection(QCState currentState, TargetQCState targetState, double timestep) {
+InverseKinematicResult optimizeMotorVelocities(QCState currentState, TargetQCState targetState, double timestep) {
     //Step 1: Find the theretical forces at the points (width/2,0) and (0,width/2) that would produce the desired angular acceleration for pitch and roll.
     double desiredAngularAccelPitch = (targetState.targetAngle.getPitch() - currentState.getPose().getRotation().getPitch()) / timestep;
     double desiredAngularAccelRoll = (targetState.targetAngle.getRoll() - currentState.getPose().getRotation().getRoll()) / timestep;

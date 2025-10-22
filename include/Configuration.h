@@ -26,3 +26,10 @@
 #define LINEAR_DRAG_COEFF_Z 0.25
 #define ANGULAR_DRAG_COEFF_XY 0.005
 #define ANGULAR_DRAG_COEFF_Z 0.005
+
+/*
+RANDOM NOTES:
+Possible encoder/magnet pairing:
+https://www.apexmagnets.com/magnets/3mm-x-2mm-disc-neodymium-magnet?srsltid=ARcRdnooPzPf5m3-a-cQOnyCKTR5fxU1tlA2biy94N--J_RvzCmAhl6O
+https://www.amazon.com/AS5048A-Accuracy-Magnetic-Peripheral-Interface/dp/B08LW1K6F7
+*/
