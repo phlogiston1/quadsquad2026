@@ -43,21 +43,23 @@ imu_yaw_rate = 0
 imu_pitch_rate = 0
 imu_roll_rate = 0
 
-def recieve_data(left, front, right, rear, y,p,r,yr,pr,rr):
+def recieve_motors(left, front, right, rear):
     global front_vel
     global right_vel
     global rear_vel
     global left_vel
+    left_vel = left
+    front_vel = front
+    right_vel = right
+    rear_vel = rear
+
+def recieve_IMU(y,p,r,yr,pr,rr):
     global imu_yaw
     global imu_pitch
     global imu_roll
     global imu_yaw_rate
     global imu_pitch_rate
     global imu_roll_rate
-    left_vel = left
-    front_vel = front
-    right_vel = right
-    rear_vel = rear
     imu_yaw = y
     imu_pitch = p
     imu_roll = r
@@ -66,7 +68,8 @@ def recieve_data(left, front, right, rear, y,p,r,yr,pr,rr):
     imu_roll_rate = rr
 
 
-Bridge.provide("r", recieve_data) # type: ignore
+Bridge.provide("r", recieve_motors) # type: ignore
+Bridge.provide("p", recieve_IMU) # type: ignore
 
 ground_station = Communication(QUADCOPTER_PORT, GROUND_STATION_PORT, GROUND_STATION_IP)
 ground_station.begin()
