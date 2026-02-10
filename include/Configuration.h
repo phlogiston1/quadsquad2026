@@ -28,11 +28,11 @@
 // They are used as the maximum velocities and accelerations for motion profiling the quadcopter's movement,
 // As well as smoothing manual control inputs to ensure they are attainable.
 // They will probably be relatively low to give the control system less aggressive commands, which should help with stability.
-#define MAX_VELOCITY_XY 5.0 //max horizontal velocity in m/s
-#define MAX_VELOCITY_Z 3.0 //max vertical velocity in m/s
-#define MAX_ACCELERATION_XY 2.0 //max horizontal acceleration in m/s^2
-#define MAX_ACCELERATION_Z 2.0 //max vertical acceleration in m/s^2
-#define MAX_JERK_XY 5.0 //max horizontal jerk in m/s^3
+#define MAX_VELOCITY_XY 1.0 //max horizontal velocity in m/s
+#define MAX_VELOCITY_Z 1.0 //max vertical velocity in m/s
+#define MAX_ACCELERATION_XY 1.0 //max horizontal acceleration in m/s^2
+#define MAX_ACCELERATION_Z 1.0 //max vertical acceleration in m/s^2
+#define MAX_JERK_XY 0.3 //max horizontal jerk in m/s^3
 #define MAX_YAW_RATE 1.0 //max yaw rate in rad/s
 #define MAX_YAW_ACCELERATION 1.0 //max yaw acceleration in rad/s^2
 
@@ -64,28 +64,15 @@
 #define MOTOR_KS 0.0 //motor velocity static friction constant
 #define MOTOR_KV 0.0 //motor velocity proportional constant
 #define MOTOR_KA 0.0 //motor velocity acceleration constant
-#define MOTOR_KP 0.0 //motor velocity proportional control constant
-#define MOTOR_KI 0.0 //motor velocity integral control constant
-#define MOTOR_KD 0.0 //motor velocity derivative control constant
-#define MOTOR_INTEGRAL_WINDUP_LIMIT 100.0 //limit for motor velocity PID integral term to prevent windup
+// #define MOTOR_KP 0.0 //motor velocity proportional control constant
+// #define MOTOR_KI 0.0 //motor velocity integral control constant
+// #define MOTOR_KD 0.0 //motor velocity derivative control constant
+// #define MOTOR_INTEGRAL_WINDUP_LIMIT 100.0 //limit for motor velocity PID integral term to prevent windup
 #define MOTOR_VELOCITY_RAMP_RATE 1000.0 //max change in motor velocity per second
 #define MAX_MOTOR_VELOCITY 1000.0 //max motor velocity in Rad/s
 #define ENABLE_INV_KIN_MOTOR_CONTSTRAINTS false
 
 #define ENABLE_FLOOR true
 
-// static const std::vector<std::vector<double>> LQR_K = {
-//     {0.1, 0, 0, 0.05, 0, 0, 1.2, 0, 0, 0.1, 0, 0},   // thrust channel
-//     {0, 0, 0, 0, 0, 0, 0, 1.1, 0, 0, 0.9, 0},       // roll torque
-//     {0, 0, 0, 0, 0, 0, -1.1, 0, 0, -0.9, 0, 0},     // pitch torque
-//     {0, 0, 0, 0, 0, 0, 0, 0, 1.2, 0, 0, 0.8}        // yaw torque
-// };
+#define VERBOSE false
 
-
-
-/*
-RANDOM NOTES:
-Possible encoder/magnet pairing:
-https://www.apexmagnets.com/magnets/3mm-x-2mm-disc-neodymium-magnet?srsltid=ARcRdnooPzPf5m3-a-cQOnyCKTR5fxU1tlA2biy94N--J_RvzCmAhl6O
-https://www.amazon.com/AS5048A-Accuracy-Magnetic-Peripheral-Interface/dp/B08LW1K6F7
-*/

@@ -6,11 +6,11 @@
 #include <chrono> 
 
 
-Quadcopter::Quadcopter(State initial, double max_velocity, double max_acceleration, double max_jerk):
+Quadcopter::Quadcopter(State initial):
     state(initial), 
-    velocity_controller(VelocityController(max_velocity, max_acceleration, max_jerk)),
+    velocity_controller(VelocityController()),
     path_controller(PathController()),
-    height_controller(HeightController(max_velocity, max_acceleration)) {
+    height_controller(HeightController()) {
         start_time = std::chrono::high_resolution_clock::now();
 }
 
@@ -19,7 +19,8 @@ State Quadcopter::getState() {
 }
 
 void Quadcopter::addVisionMeasurement(Vector3D translation, double timestamp) {
-
+    //TODO make this not sucky and stupid
+    state.pose.translation = translation;
 }
 
 void Quadcopter::addIMUMeasurement(Quaternion angular_pos, Vector3D angular_vel) {
@@ -32,21 +33,30 @@ void Quadcopter::setHeight(double height) {
     manual = false;
 }
 
+void Quadcopter::addWaypoint(Vector2D waypoint) {
+    path_waypoints.push_back(waypoint);
+}
+
+void Quadcopter::beginPath() {
+    beginPath(Path(path_waypoints, MAX_VELOCITY_XY, MAX_ACCELERATION_XY, MAX_JERK_XY));
+}
+
 void Quadcopter::beginPath(Path path) {
     // if(landing_status = LANDED) return;
     path_controller.beginPath(path, 0);
     manual = false;
 }
 
-void Quadcopter::beginManualControl(std::function<Vector3D()> velocity) {
-    landing_status = FLYING;
+void Quadcopter::beginManualControl() {
     velocity_controller.setInitialPose(state);
-    velocity_supplier = velocity;
     manual = true;
 }
 
+void Quadcopter::setVelocity(Vector3D velocity) {
+    manual_velocity = velocity;
+}
+
 void Quadcopter::land() {
-    landing_status = DECENT;
     setHeight(0.1);
 }
 
@@ -67,10 +77,9 @@ double Quadcopter::getTime() {
     return std::chrono::duration_cast<std::chrono::seconds>(time - start_time).count();
 }
 
-void Quadcopter::update_simulation() {
-    QCRequest req = QCRequest(Pose3D(), Pose3D());
+QCRequest* Quadcopter::getRequest() {
     if(manual){
-        req = velocity_controller.getTarget(state, velocity_supplier());
+        req = velocity_controller.getTarget(state, manual_velocity);
     } else {
         req = path_controller.getTarget(state);
         QCRequest height_request = height_controller.getTarget(state);
@@ -78,11 +87,36 @@ void Quadcopter::update_simulation() {
         req.position.translation.z = height_request.position.translation.z;
         req.velocity.translation.z = height_request.velocity.translation.z;
     }
+    return &req;
+}
 
-    state.motor_velocities = applyMixer(lqrControlStep(
-        getStateVector(state),
-        getStateVector(req.position, req.velocity)
-    ));
+Vector3D* Quadcopter::getTranslation() {
+    return &state.pose.translation;
+}
 
-    state = state.predict(LOOP_TIME);
+Vector3D* Quadcopter::getVelocity() {
+    return &state.linear_velocity;
+}
+
+void Quadcopter::updateSimulation() {
+    // getRequest();
+
+    // state.motor_velocities = applyMixer(lqrControlStep(
+    //     getStateVector(state),
+    //     getStateVector(req.position, req.velocity)
+    // ));
+
+    state = state.fullKinematicsStep(LOOP_TIME);
+}
+
+void Quadcopter::updateKinematics() {
+    state = state.translationKinematicsStep(LOOP_TIME);
+}
+
+void Quadcopter::setMotorVelocities(MotorVelocities vels) {
+    state.motor_velocities = vels;
+}
+
+bool Quadcopter::isManual() {
+    return manual;
 }
