@@ -4,7 +4,7 @@
 #include <Arduino.h>
 #include <Wire.h>
 
-class WT901 {
+class WT901_I2C {
 public:
     struct Data {
         float acc_x, acc_y, acc_z;     // g
@@ -15,7 +15,7 @@ public:
         unsigned long timestamp_ms;    // millis()
     };
 
-    explicit WT901(uint8_t i2c_addr = 0x50, TwoWire &wire = Wire);
+    explicit WT901_I2C(uint8_t i2c_addr = 0x50, TwoWire &wire = Wire);
 
     void begin(uint32_t i2c_clock = 400000);
     bool isConnected();

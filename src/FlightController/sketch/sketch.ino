@@ -81,7 +81,7 @@
     #endif
 
     #ifdef ENABLE_IMU
-    #include "IMU.h"
+    #include "WT901_I2C.h"
     #endif
 
     #ifdef ENABLE_MOTORS
@@ -169,8 +169,8 @@
     double previous_motor_velocities[4] = {0,0,0,0};
 
     #ifdef ENABLE_IMU
-    WT901 imu;
-    WT901::Data imu_state = WT901::Data{
+    WT901_I2C imu;
+    WT901_I2C::Data imu_state = WT901_I2C::Data{
         0,0,0,
         0,0,0,
         0,0,0,

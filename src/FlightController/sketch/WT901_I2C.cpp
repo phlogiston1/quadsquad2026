@@ -1,4 +1,4 @@
-#include "IMU.h"
+#include "WT901_I2C.h"
 
 // Official WT901 register scaling (from datasheet / protocol)
 static constexpr float ACC_SCALE   = 16.0f   / 32768.0f;  // g
@@ -13,28 +13,28 @@ static constexpr uint8_t REG_MAG_X   = 0x3A;
 static constexpr uint8_t REG_ROLL    = 0x3D;
 static constexpr uint8_t REG_TEMP    = 0x40;
 
-WT901::WT901(uint8_t i2c_addr, TwoWire &wire) {
+WT901_I2C::WT901_I2C(uint8_t i2c_addr, TwoWire &wire) {
     _addr = i2c_addr;
     _wire = &wire;
 }
 
-void WT901::begin(uint32_t i2c_clock) {
+void WT901_I2C::begin(uint32_t i2c_clock) {
     _wire->begin();
     _wire->setClock(i2c_clock);
 }
 
-bool WT901::isConnected() {
+bool WT901_I2C::isConnected() {
     _wire->beginTransmission(_addr);
     return (_wire->endTransmission() == 0);
 }
 
 // Non-blocking request flag (actual I2C happens in update)
-void WT901::requestData() {
+void WT901_I2C::requestData() {
     if (_state != State::IDLE) return;
     _state = State::READING;
 }
 
-bool WT901::update() {
+bool WT901_I2C::update() {
     if (_state != State::READING) return false;
 
     // Read 26 bytes starting at 0x34:
