@@ -685,6 +685,7 @@
 
 
     //IMU GARBAGE
+#ifdef ENABLE_IMU
     void CopeCmdData(unsigned char ucData)
 {
 	static unsigned char s_ucData[50], s_ucRxCnt = 0;
@@ -839,3 +840,4 @@ static void AutoScanSensor(void)
 	Monitor.print("please check your connection\r\n");
 }
     //2906 lines w/o headers, 3589 w headers.
+#endif
