@@ -5,8 +5,6 @@
 *.slo
 *.a
 *.lib
-*.so
-*.so.*
 *.dll
 *.dylib
 

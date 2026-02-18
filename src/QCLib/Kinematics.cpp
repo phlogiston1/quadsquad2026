@@ -69,7 +69,7 @@ Acceleration velocitiesToAccel (State currentState) {
     double accel_roll = (torque_roll - drag_torque.x) / QUADCOPTER_IXY;
 
     double thrust = thrust_front + thrust_rear + thrust_right + thrust_left;
-    std::array thrustDirection = currentState.pose.rotation.thrustDirection();
+    std::array<double, 3UL> thrustDirection = currentState.pose.rotation.thrustDirection();
 
     Vector3D force = Vector3D(
         thrust*thrustDirection[0],

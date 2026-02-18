@@ -9,6 +9,10 @@ add_library(quadcopter SHARED
 
 set_target_properties(quadcopter PROPERTIES PUBLIC_HEADER include/Quadcopter.h)
 
+set_target_properties(quadcopter PROPERTIES
+    SUFFIX ".so"
+)
+
 
 target_include_directories(quadcopter PRIVATE include)
 target_include_directories(quadcopter PRIVATE src)
